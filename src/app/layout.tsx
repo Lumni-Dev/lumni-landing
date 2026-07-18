@@ -19,7 +19,6 @@ const company = CompanyRepository.find();
 
 const SITE_URL = "https://www.lumni.dev.br";
 const PAGE_TITLE = `${company.name} - ${company.tagline}`;
-const OG_IMAGE = "/images/logo-inverse.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -57,20 +56,13 @@ export const metadata: Metadata = {
     siteName: company.name,
     title: PAGE_TITLE,
     description: company.description,
-    images: [
-      {
-        url: OG_IMAGE,
-        width: 1200,
-        height: 600,
-        alt: PAGE_TITLE,
-      },
-    ],
+    // A imagem é gerada por src/app/opengraph-image.tsx (og:image automático).
   },
   twitter: {
     card: "summary_large_image",
     title: PAGE_TITLE,
     description: company.description,
-    images: [OG_IMAGE],
+    // Sem twitter-image dedicada: o X usa o og:image gerado como fallback.
   },
   robots: {
     index: true,
