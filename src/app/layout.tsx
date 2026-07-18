@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { ContentGuard } from "@/components/system/content-guard";
@@ -17,26 +17,82 @@ const geistMono = Geist_Mono({
 
 const company = CompanyRepository.find();
 
+const SITE_URL = "https://www.lumni.dev.br";
+const PAGE_TITLE = `${company.name} - ${company.tagline}`;
+const OG_IMAGE = "/images/logo-inverse.png";
+
 export const metadata: Metadata = {
-  title: `${company.name} | ${company.tagline}`,
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: PAGE_TITLE,
+    template: `%s | ${company.name}`,
+  },
   description: company.description,
   applicationName: company.name,
+  authors: [{ name: company.name, url: SITE_URL }],
+  creator: company.name,
+  publisher: company.legalName,
+  category: "technology",
   keywords: [
+    "Lumni",
     "desenvolvimento de sistemas",
     "desenvolvimento de aplicativos",
+    "engenharia de software",
+    "software sob demanda",
     "automação de processos",
+    "integração de sistemas",
+    "RPA",
     "consultoria em tecnologia",
     "cibersegurança",
     "squad de desenvolvimento",
+    "alocação de desenvolvedores",
   ],
-  openGraph: {
-    title: `${company.name} | ${company.tagline}`,
-    description: company.description,
-    siteName: company.name,
-    locale: "pt_BR",
-    type: "website",
+  alternates: {
+    canonical: "/",
   },
-  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: SITE_URL,
+    siteName: company.name,
+    title: PAGE_TITLE,
+    description: company.description,
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 600,
+        alt: PAGE_TITLE,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: company.description,
+    images: [OG_IMAGE],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
