@@ -39,6 +39,10 @@ yarn-error.log*
 # lunia tooling
 .lunia-stats.json
 
+# agent instructions (local only)
+CLAUDE.md
+AGENTS.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
