@@ -1,0 +1,71 @@
+import { Section } from "@/components/layout/section";
+import { Reveal } from "@/components/ui/reveal";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { Spotlight } from "@/components/ui/spotlight";
+import type { System } from "@/domain/models/system";
+
+interface SystemsSectionProps {
+  systems: readonly System[];
+}
+
+export function SystemsSection({ systems }: SystemsSectionProps) {
+  return (
+    <Section id="sistemas">
+      <SectionHeading
+        index="02"
+        label="Sistemas proprietários"
+        title="Também fazemos sistemas próprios."
+        description="São produtos que a Lumni desenvolve, opera e evolui internamente até virarem plataforma. Endurecidos pelo uso diário e disponíveis para quem quiser conhecer."
+      />
+
+      <div className="mt-24 flex flex-col gap-8">
+        {systems.map((system, index) => (
+          <Reveal key={system.id} delay={index * 80}>
+            <Spotlight className="border border-ink-800 bg-ink-950/70 backdrop-blur-sm">
+              <div className="flex items-center border-b border-ink-800 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
+                <span className="text-ink-500">
+                  lumni_{system.id}
+                  <span className="blink text-ink-300">_</span>
+                </span>
+              </div>
+
+              <div className="p-6 lg:p-10">
+                <div className="max-w-2xl">
+                  <h3 className="text-4xl font-semibold tracking-tight text-white lg:text-5xl">
+                    {system.name}
+                  </h3>
+                  <p className="mt-4 font-mono text-sm tracking-wide text-ink-300 uppercase">
+                    {system.headline}
+                  </p>
+                  <p className="mt-6 text-base leading-relaxed text-pretty text-ink-400">
+                    {system.description}
+                  </p>
+
+                  <ul className="mt-8 flex flex-wrap gap-2">
+                    {system.highlights.map((highlight) => (
+                      <li
+                        key={highlight}
+                        className="border border-ink-700 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase"
+                      >
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <a
+                  href={system.url}
+                  target={system.target}
+                  rel={system.rel}
+                  className="group mt-10 inline-flex items-center justify-center gap-3 bg-white px-8 py-4 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-[1.03]"
+                >
+                  {system.actionLabel}
+                </a>
+              </div>
+            </Spotlight>
+          </Reveal>
+        ))}
+      </div>
+    </Section>
+  );
+}

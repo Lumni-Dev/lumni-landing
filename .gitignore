@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# lunia tooling
+.lunia-stats.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
