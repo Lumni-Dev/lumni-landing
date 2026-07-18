@@ -48,11 +48,19 @@
     background-color: var(--color-ink-950);
     color: var(--color-ink-100);
     font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+
+    /* Bloqueia seleção de texto, o menu de toque do iOS e o arrasto de mídia. */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
   }
 
-  ::selection {
-    background-color: #ffffff;
-    color: var(--color-ink-950);
+  img,
+  a,
+  svg {
+    -webkit-user-drag: none;
+    user-drag: none;
   }
 
   :focus-visible {

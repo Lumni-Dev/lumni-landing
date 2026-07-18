@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import { ContentGuard } from "@/components/system/content-guard";
 import { CompanyRepository } from "@/data/company.repository";
 import "@/styles/globals.css";
 
@@ -49,6 +50,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-ink-950 text-ink-100">
+        <ContentGuard />
         <div aria-hidden="true" className="grain" />
         {children}
       </body>
