@@ -48,7 +48,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               </p>
             </div>
 
-            <ul className="flex flex-wrap content-start gap-2 lg:justify-end">
+            <ul className="flex flex-wrap content-start gap-2">
               {service.deliverables.map((deliverable) => (
                 <li
                   key={deliverable}
