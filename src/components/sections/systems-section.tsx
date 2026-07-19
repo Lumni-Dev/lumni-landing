@@ -53,14 +53,23 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
                   </ul>
                 </div>
 
-                <a
-                  href={system.url}
-                  target={system.target}
-                  rel={system.rel}
-                  className="group mt-10 inline-flex items-center justify-center gap-3 bg-white px-8 py-4 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-[1.03]"
-                >
-                  {system.actionLabel}
-                </a>
+                {system.url ? (
+                  <a
+                    href={system.url}
+                    target={system.target}
+                    rel={system.rel}
+                    className="group mt-10 inline-flex items-center justify-center gap-3 bg-white px-8 py-4 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-[1.03]"
+                  >
+                    {system.actionLabel}
+                  </a>
+                ) : (
+                  <span
+                    aria-disabled="true"
+                    className="mt-10 inline-flex cursor-default items-center justify-center gap-3 border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-400"
+                  >
+                    {system.actionLabel}
+                  </span>
+                )}
               </div>
             </Spotlight>
           </Reveal>
