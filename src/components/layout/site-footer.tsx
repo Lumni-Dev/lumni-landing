@@ -1,3 +1,4 @@
+import { ChannelIcon } from "@/components/icons/channel-icon";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
 import type { Company } from "@/domain/models/company";
@@ -46,8 +47,12 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
                       href={channel.href}
                       target={channel.target}
                       rel={channel.rel}
-                      className="text-sm text-ink-300 transition-colors hover:text-white"
+                      className="group inline-flex items-center gap-2.5 text-sm text-ink-300 transition-colors hover:text-white"
                     >
+                      <ChannelIcon
+                        name={channel.kind}
+                        className="h-4 w-4 shrink-0 text-ink-500 transition-colors group-hover:text-white"
+                      />
                       {channel.value}
                     </a>
                   </li>
