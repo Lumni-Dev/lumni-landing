@@ -32,6 +32,7 @@ const CATALOG: readonly System[] = [
       "Comando por voz",
       "Resposta lida em voz alta",
       "Agente ao vivo na conversa",
+      "Compatível com Claude",
       "Multi-idioma",
       "Roda 100% local",
       "Linux, macOS e Windows",
