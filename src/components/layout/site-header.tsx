@@ -72,7 +72,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
           ))}
           <a
             href="#contato"
-            className="bg-white px-6 py-2.5 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-105"
+            className="rounded-[10px] bg-white px-6 py-2.5 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-105"
           >
             Fale conosco
           </a>
@@ -122,7 +122,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
               <a
                 href="#contato"
                 onClick={() => setIsMenuOpen(false)}
-                className="block bg-white px-6 py-3 text-center text-sm font-semibold text-ink-950"
+                className="block rounded-[10px] bg-white px-6 py-3 text-center text-sm font-semibold text-ink-950"
               >
                 Fale conosco
               </a>

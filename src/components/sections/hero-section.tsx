@@ -53,7 +53,7 @@ export function HeroSection({ company }: HeroSectionProps) {
               <Magnetic>
                 <a
                   href="#contato"
-                  className="group sheen inline-flex items-center justify-center gap-3 bg-white px-8 py-4 text-sm font-semibold text-ink-950"
+                  className="group sheen inline-flex items-center justify-center gap-3 rounded-[10px] bg-white px-8 py-4 text-sm font-semibold text-ink-950"
                 >
                   Iniciar um projeto
                 </a>
@@ -62,7 +62,7 @@ export function HeroSection({ company }: HeroSectionProps) {
               <Magnetic>
                 <a
                   href="#servicos"
-                  className="inline-flex items-center justify-center border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-100 transition-colors duration-300 hover:border-ink-400 hover:text-white"
+                  className="inline-flex items-center justify-center rounded-[10px] border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-100 transition-colors duration-300 hover:border-ink-400 hover:text-white"
                 >
                   Ver serviços
                 </a>

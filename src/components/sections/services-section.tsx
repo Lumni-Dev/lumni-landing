@@ -31,7 +31,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               <span className="font-mono text-5xl leading-none font-light text-ink-700 transition-colors duration-500 group-hover:text-white lg:text-6xl">
                 {service.positionLabel(index)}
               </span>
-              <span className="flex h-12 w-12 items-center justify-center border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-white">
+              <span className="flex h-12 w-12 items-center justify-center rounded-[10px] border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-white">
                 <ServiceIcon name={service.icon} className="h-5 w-5" />
               </span>
             </div>
@@ -52,7 +52,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               {service.deliverables.map((deliverable) => (
                 <li
                   key={deliverable}
-                  className="border border-ink-700 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase transition-colors duration-500 group-hover:border-ink-500 group-hover:text-ink-100"
+                  className="rounded-[10px] border border-ink-700 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase transition-colors duration-500 group-hover:border-ink-500 group-hover:text-ink-100"
                 >
                   {deliverable}
                 </li>

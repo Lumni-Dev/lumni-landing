@@ -28,7 +28,7 @@ export function ContactSection({ channels }: ContactSectionProps) {
       />
 
       <Reveal delay={200}>
-        <Spotlight className="mt-24 border border-ink-800 bg-ink-950/70 backdrop-blur-sm">
+        <Spotlight className="mt-24 overflow-hidden rounded-[10px] border border-ink-800 bg-ink-950/70 backdrop-blur-sm">
           <div className="flex items-center justify-between border-b border-ink-800 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
             <span className="text-ink-500">
               canais_diretos<span className="blink text-ink-300">_</span>
@@ -52,7 +52,7 @@ export function ContactSection({ channels }: ContactSectionProps) {
                   className="hud-frame group flex flex-col gap-6 p-6 transition-colors duration-500 hover:bg-ink-900/60 sm:flex-row sm:items-center sm:justify-between lg:p-10"
                 >
                   <span className="flex items-center gap-6">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-white">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-white">
                       <ChannelIcon name={channel.kind} className="h-5 w-5" />
                     </span>
                     <span className="flex flex-col gap-1.5">
