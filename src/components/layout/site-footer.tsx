@@ -15,7 +15,7 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
     <footer className="relative z-10">
       <Container>
         <div className="border-t border-ink-800 py-20">
-          <div className="grid gap-12 lg:grid-cols-[2fr_1fr_1fr] lg:gap-16">
+          <div className="grid items-start gap-12 lg:grid-cols-[2fr_1fr_1fr] lg:gap-16">
             <div className="max-w-sm">
               <Logo companyName={company.name} className="h-10 w-auto" />
               <p className="mt-6 text-sm leading-relaxed text-pretty text-ink-400">{company.description}</p>
