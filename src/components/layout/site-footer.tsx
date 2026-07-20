@@ -29,7 +29,7 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
                   <li key={service.id}>
                     <a
                       href={service.anchor}
-                      className="text-sm text-ink-300 transition-colors hover:text-white"
+                      className="text-sm text-ink-300 transition-colors hover:text-ink-50"
                     >
                       {service.title}
                     </a>
@@ -47,11 +47,11 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
                       href={channel.href}
                       target={channel.target}
                       rel={channel.rel}
-                      className="group inline-flex items-center gap-2.5 text-sm text-ink-300 transition-colors hover:text-white"
+                      className="group inline-flex items-center gap-2.5 text-sm text-ink-300 transition-colors hover:text-ink-50"
                     >
                       <ChannelIcon
                         name={channel.kind}
-                        className="h-4 w-4 shrink-0 text-ink-500 transition-colors group-hover:text-white"
+                        className="h-4 w-4 shrink-0 text-ink-500 transition-colors group-hover:text-ink-50"
                       />
                       {channel.value}
                     </a>
@@ -68,7 +68,7 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
             </div>
             <a
               href="#inicio"
-              className="text-xs text-ink-500 transition-colors hover:text-white"
+              className="text-xs text-ink-500 transition-colors hover:text-ink-50"
             >
               Voltar ao topo
             </a>

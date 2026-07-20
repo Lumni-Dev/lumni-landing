@@ -20,7 +20,7 @@ export function SectionHeading({ index, label, title, description }: SectionHead
       <WordReveal
         as="h2"
         text={title}
-        className="mt-8 text-4xl leading-[1.1] font-semibold tracking-[-0.02em] text-balance text-white sm:text-5xl lg:text-6xl"
+        className="mt-8 text-4xl leading-[1.1] font-semibold tracking-[-0.02em] text-balance text-ink-50 sm:text-5xl lg:text-6xl"
       />
 
       <Reveal delay={150}>

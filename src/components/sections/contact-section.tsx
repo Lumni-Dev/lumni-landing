@@ -35,8 +35,8 @@ export function ContactSection({ channels }: ContactSectionProps) {
             </span>
             <span className="flex items-center gap-2.5 text-ink-300">
               <span aria-hidden="true" className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping bg-white/60" />
-                <span className="relative inline-flex h-2 w-2 bg-white" />
+                <span className="absolute inline-flex h-full w-full animate-ping bg-ink-50/60" />
+                <span className="relative inline-flex h-2 w-2 bg-ink-50" />
               </span>
               Disponível
             </span>
@@ -52,14 +52,14 @@ export function ContactSection({ channels }: ContactSectionProps) {
                   className="hud-frame group flex flex-col gap-6 p-6 transition-colors duration-500 hover:bg-ink-900/60 sm:flex-row sm:items-center sm:justify-between lg:p-10"
                 >
                   <span className="flex items-center gap-6">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-white">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-ink-50">
                       <ChannelIcon name={channel.kind} className="h-5 w-5" />
                     </span>
                     <span className="flex flex-col gap-1.5">
                       <span className="font-mono text-xs tracking-[0.25em] text-ink-500 uppercase">
                         {channel.label}
                       </span>
-                      <span className="font-mono text-xl font-medium tracking-tight break-all text-white lg:text-2xl">
+                      <span className="font-mono text-xl font-medium tracking-tight break-all text-ink-50 lg:text-2xl">
                         {channel.value}
                       </span>
                     </span>
@@ -67,7 +67,7 @@ export function ContactSection({ channels }: ContactSectionProps) {
 
                   <span
                     aria-hidden="true"
-                    className="hidden font-mono text-ink-600 transition-all duration-300 group-hover:translate-x-1 group-hover:text-white sm:block"
+                    className="hidden font-mono text-ink-600 transition-all duration-300 group-hover:translate-x-1 group-hover:text-ink-50 sm:block"
                   >
                     -&gt;
                   </span>

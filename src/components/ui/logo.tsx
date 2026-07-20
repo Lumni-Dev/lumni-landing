@@ -15,7 +15,8 @@ export function Logo({ companyName, className = "h-9 w-auto", priority = false }
       width={240}
       height={120}
       priority={priority}
-      className={className}
+      /* A arte disponível é a versão branca; invert() a converte para escura no tema claro. */
+      className={`${className} invert`}
     />
   );
 }

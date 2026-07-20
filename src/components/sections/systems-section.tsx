@@ -31,7 +31,7 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
 
               <div className="p-6 lg:p-10">
                 <div className="max-w-2xl">
-                  <h3 className="text-4xl font-semibold tracking-tight text-white lg:text-5xl">
+                  <h3 className="text-4xl font-semibold tracking-tight text-ink-50 lg:text-5xl">
                     {system.name}
                   </h3>
                   <p className="mt-4 font-mono text-sm tracking-wide text-ink-300 uppercase">
@@ -58,7 +58,7 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
                     href={system.url}
                     target={system.target}
                     rel={system.rel}
-                    className="group mt-10 inline-flex items-center justify-center gap-3 rounded-[10px] bg-white px-8 py-4 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-[1.03]"
+                    className="group mt-10 inline-flex items-center justify-center gap-3 rounded-[10px] bg-ink-50 px-8 py-4 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-[1.03]"
                   >
                     {system.actionLabel}
                   </a>

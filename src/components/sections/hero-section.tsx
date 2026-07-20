@@ -39,7 +39,7 @@ export function HeroSection({ company }: HeroSectionProps) {
           <WordReveal
             as="h1"
             text={company.tagline}
-            className="max-w-5xl text-5xl leading-[0.98] font-semibold tracking-[-0.03em] text-balance text-white sm:text-6xl lg:text-7xl xl:text-8xl"
+            className="max-w-5xl text-5xl leading-[0.98] font-semibold tracking-[-0.03em] text-balance text-ink-50 sm:text-6xl lg:text-7xl xl:text-8xl"
           />
 
           <Reveal delay={100}>
@@ -53,7 +53,7 @@ export function HeroSection({ company }: HeroSectionProps) {
               <Magnetic>
                 <a
                   href="#contato"
-                  className="group sheen inline-flex items-center justify-center gap-3 rounded-[10px] bg-white px-8 py-4 text-sm font-semibold text-ink-950"
+                  className="group sheen inline-flex items-center justify-center gap-3 rounded-[10px] bg-ink-50 px-8 py-4 text-sm font-semibold text-ink-950"
                 >
                   Iniciar um projeto
                 </a>
@@ -62,7 +62,7 @@ export function HeroSection({ company }: HeroSectionProps) {
               <Magnetic>
                 <a
                   href="#servicos"
-                  className="inline-flex items-center justify-center rounded-[10px] border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-100 transition-colors duration-300 hover:border-ink-400 hover:text-white"
+                  className="inline-flex items-center justify-center rounded-[10px] border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-100 transition-colors duration-300 hover:border-ink-400 hover:text-ink-50"
                 >
                   Ver serviços
                 </a>
