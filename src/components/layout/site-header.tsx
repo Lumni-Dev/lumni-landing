@@ -64,15 +64,15 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
             <a
               key={link.href}
               href={link.href}
-              className="group relative text-sm font-medium text-ink-300 transition-colors hover:text-ink-50"
+              className="group relative text-sm font-medium text-ink-300 transition-colors hover:text-white"
             >
               {link.label}
-              <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-ink-50 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-white transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
           <a
             href="#contato"
-            className="rounded-[10px] bg-ink-50 px-6 py-2.5 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-105"
+            className="rounded-[10px] bg-white px-6 py-2.5 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-105"
           >
             Fale conosco
           </a>
@@ -87,12 +87,12 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
         >
           <span
-            className={`h-px w-6 bg-ink-50 transition-transform duration-300 ${
+            className={`h-px w-6 bg-white transition-transform duration-300 ${
               isMenuOpen ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-ink-50 transition-transform duration-300 ${
+            className={`h-px w-6 bg-white transition-transform duration-300 ${
               isMenuOpen ? "-translate-y-[3.5px] -rotate-45" : ""
             }`}
           />
@@ -112,7 +112,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
                 <a
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block py-3 text-lg font-medium text-ink-200 transition-colors hover:text-ink-50"
+                  className="block py-3 text-lg font-medium text-ink-200 transition-colors hover:text-white"
                 >
                   {link.label}
                 </a>
@@ -122,7 +122,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
               <a
                 href="#contato"
                 onClick={() => setIsMenuOpen(false)}
-                className="block rounded-[10px] bg-ink-50 px-6 py-3 text-center text-sm font-semibold text-ink-950"
+                className="block rounded-[10px] bg-white px-6 py-3 text-center text-sm font-semibold text-ink-950"
               >
                 Fale conosco
               </a>

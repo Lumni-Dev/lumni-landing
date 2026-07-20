@@ -203,7 +203,7 @@ export function CircuitField({ className = "" }: CircuitFieldProps) {
           const segmentAlpha = alpha * falloff;
           if (segmentAlpha <= 0.01) break;
 
-          context.strokeStyle = `rgba(0, 0, 0, ${segmentAlpha})`;
+          context.strokeStyle = `rgba(255, 255, 255, ${segmentAlpha})`;
           context.beginPath();
           context.moveTo(from.x, from.y);
           context.lineTo(to.x, to.y);
@@ -211,21 +211,21 @@ export function CircuitField({ className = "" }: CircuitFieldProps) {
 
           // Solda nos cantos do traçado, como as ilhas de uma placa.
           if (index > 0) {
-            context.fillStyle = `rgba(0, 0, 0, ${segmentAlpha * 0.9})`;
+            context.fillStyle = `rgba(255, 255, 255, ${segmentAlpha * 0.9})`;
             context.fillRect(from.x - 1, from.y - 1, 2, 2);
           }
         }
       }
 
       // As cabeças vão num passe à parte: o halo é configurado uma vez, não por partícula.
-      context.shadowColor = "rgba(0, 0, 0, 0.65)";
+      context.shadowColor = "rgba(255, 255, 255, 0.65)";
       context.shadowBlur = 9;
 
       for (const particle of state.particles) {
         const { alpha, size } = headIntensity(particle, pointer);
         if (alpha <= 0.01) continue;
 
-        context.fillStyle = `rgba(0, 0, 0, ${Math.min(alpha * 1.6, 1)})`;
+        context.fillStyle = `rgba(255, 255, 255, ${Math.min(alpha * 1.6, 1)})`;
         context.fillRect(particle.x - size / 2, particle.y - size / 2, size, size);
       }
 

@@ -64,7 +64,7 @@ export function DotMatrix({ className = "" }: DotMatrixProps) {
           }
         }
 
-        context.fillStyle = `rgba(0, 0, 0, ${alpha})`;
+        context.fillStyle = `rgba(255, 255, 255, ${alpha})`;
         context.beginPath();
         context.arc(x, y, radius, 0, Math.PI * 2);
         context.fill();

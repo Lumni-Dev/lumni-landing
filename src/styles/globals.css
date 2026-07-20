@@ -1,22 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /*
-   * Tema claro: a escala é invertida em relação ao nome. ink-950 é a superfície
-   * mais clara (fundo) e ink-50 é a tinta mais escura (texto de destaque). Assim
-   * todas as referências ink-* dos componentes trocam de valência sem reescrita.
-   */
-  --color-ink-950: #ffffff;
-  --color-ink-900: #f7f7f7;
-  --color-ink-800: #f0f0f0;
-  --color-ink-700: #e4e4e4;
-  --color-ink-600: #d4d4d4;
-  --color-ink-500: #b8b8b8;
-  --color-ink-400: #949494;
-  --color-ink-300: #6e6e6e;
-  --color-ink-200: #474747;
-  --color-ink-100: #262626;
-  --color-ink-50: #0d0d0d;
+  --color-ink-950: #000000;
+  --color-ink-900: #070707;
+  --color-ink-800: #0f0f0f;
+  --color-ink-700: #1a1a1a;
+  --color-ink-600: #262626;
+  --color-ink-500: #3d3d3d;
+  --color-ink-400: #5c5c5c;
+  --color-ink-300: #8a8a8a;
+  --color-ink-200: #b5b5b5;
+  --color-ink-100: #d9d9d9;
+  --color-ink-50: #f2f2f2;
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -68,7 +63,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid #0d0d0d;
+    outline: 2px solid #ffffff;
     outline-offset: 3px;
   }
 }
@@ -214,7 +209,7 @@
     transition: opacity 0.5s ease;
     background: radial-gradient(
       22rem 22rem at var(--pointer-x, 50%) var(--pointer-y, 50%),
-      rgb(0 0 0 / 0.05),
+      rgb(255 255 255 / 0.07),
       transparent 70%
     );
   }
@@ -235,7 +230,7 @@
     transition: opacity 0.5s ease;
     background: radial-gradient(
       16rem 16rem at var(--pointer-x, 50%) var(--pointer-y, 50%),
-      rgb(0 0 0 / 0.28),
+      rgb(255 255 255 / 0.5),
       transparent 65%
     );
     mask:
@@ -270,8 +265,8 @@
   &::before {
     top: 0;
     left: 0;
-    border-top: 2px solid var(--color-ink-200);
-    border-left: 2px solid var(--color-ink-200);
+    border-top: 1px solid var(--color-ink-200);
+    border-left: 1px solid var(--color-ink-200);
     border-top-left-radius: 10px;
     transform: translate3d(0.5rem, 0.5rem, 0);
   }
@@ -279,8 +274,8 @@
   &::after {
     right: 0;
     bottom: 0;
-    border-right: 2px solid var(--color-ink-200);
-    border-bottom: 2px solid var(--color-ink-200);
+    border-right: 1px solid var(--color-ink-200);
+    border-bottom: 1px solid var(--color-ink-200);
     border-bottom-right-radius: 10px;
     transform: translate3d(-0.5rem, -0.5rem, 0);
   }
@@ -315,7 +310,7 @@
     pointer-events: none;
     transform: translateX(-120%) skewX(-20deg);
     transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.18), transparent);
+    background: linear-gradient(90deg, transparent, rgb(0 0 0 / 0.12), transparent);
   }
 
   &:hover::after {
