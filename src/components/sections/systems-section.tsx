@@ -21,8 +21,8 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
       <div className="mt-24 flex flex-col gap-8">
         {systems.map((system, index) => (
           <Reveal key={system.id} delay={index * 80}>
-            <Spotlight className="overflow-hidden rounded-[10px] border border-ink-800 bg-ink-950/70 backdrop-blur-sm">
-              <div className="flex items-center border-b border-ink-800 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
+            <Spotlight className="overflow-hidden rounded-[10px] border border-ink-500 bg-ink-950/90 shadow-[0_1px_3px_rgba(0,0,0,0.05),0_12px_30px_-14px_rgba(0,0,0,0.15)] backdrop-blur-sm">
+              <div className="flex items-center border-b border-ink-600 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
                 <span className="text-ink-500">
                   lumni_{system.id}
                   <span className="blink text-ink-300">_</span>
@@ -45,7 +45,7 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
                     {system.highlights.map((highlight) => (
                       <li
                         key={highlight}
-                        className="rounded-[10px] border border-ink-700 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase"
+                        className="rounded-[10px] border border-ink-600 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase"
                       >
                         {highlight}
                       </li>
@@ -65,7 +65,7 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
                 ) : (
                   <span
                     aria-disabled="true"
-                    className="mt-10 inline-flex cursor-default items-center justify-center gap-3 rounded-[10px] border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-400"
+                    className="mt-10 inline-flex cursor-default items-center justify-center gap-3 rounded-[10px] border border-ink-500 px-8 py-4 text-sm font-semibold text-ink-400"
                   >
                     {system.actionLabel}
                   </span>

@@ -24,7 +24,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
             as="article"
             id={service.id}
             delay={index * 80}
-            className="hud-frame group grid scroll-mt-28 gap-8 rounded-[10px] border border-ink-800 p-6 transition-colors duration-500 hover:border-ink-600 hover:bg-ink-900/40 lg:grid-cols-[6rem_1fr] lg:gap-8 lg:p-10"
+            className="hud-frame group grid scroll-mt-28 gap-8 rounded-[10px] border border-ink-500 bg-ink-950 p-6 shadow-[0_1px_3px_rgba(0,0,0,0.05),0_12px_30px_-14px_rgba(0,0,0,0.15)] transition-colors duration-500 hover:border-ink-400 hover:bg-ink-900/60 lg:grid-cols-[6rem_1fr] lg:gap-8 lg:p-10"
           >
             <div className="flex items-start">
               <span className="font-mono text-5xl leading-none font-light text-ink-700 transition-colors duration-500 group-hover:text-ink-50 lg:text-6xl">
@@ -47,7 +47,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
                 {service.deliverables.map((deliverable) => (
                   <li
                     key={deliverable}
-                    className="rounded-[10px] border border-ink-700 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase transition-colors duration-500 group-hover:border-ink-500 group-hover:text-ink-100"
+                    className="rounded-[10px] border border-ink-600 px-3 py-1.5 font-mono text-xs tracking-wider text-ink-300 uppercase transition-colors duration-500 group-hover:border-ink-400 group-hover:text-ink-100"
                   >
                     {deliverable}
                   </li>
