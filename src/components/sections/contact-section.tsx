@@ -28,7 +28,7 @@ export function ContactSection({ channels }: ContactSectionProps) {
       />
 
       <Reveal delay={200}>
-        <Spotlight className="mt-24 overflow-hidden rounded-[10px] border border-ink-800 bg-ink-950/70 backdrop-blur-sm">
+        <Spotlight className="mt-24 overflow-hidden rounded-[10px] border border-ink-700 bg-gradient-to-b from-ink-800/90 to-ink-950/60 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
           <div className="flex items-center justify-between border-b border-ink-800 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
             <span className="text-ink-500">
               canais_diretos<span className="blink text-ink-300">_</span>

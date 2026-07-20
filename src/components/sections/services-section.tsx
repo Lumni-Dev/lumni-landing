@@ -24,7 +24,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
             as="article"
             id={service.id}
             delay={index * 80}
-            className="hud-frame group grid scroll-mt-28 gap-8 rounded-[10px] border border-ink-800 p-6 transition-colors duration-500 hover:border-ink-600 hover:bg-ink-900/40 lg:grid-cols-[6rem_1fr] lg:gap-8 lg:p-10"
+            className="hud-frame group grid scroll-mt-28 gap-8 rounded-[10px] border border-ink-700 bg-gradient-to-b from-ink-800/90 to-ink-950/40 p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-500 hover:border-ink-500 hover:from-ink-700/90 hover:to-ink-900/40 lg:grid-cols-[6rem_1fr] lg:gap-8 lg:p-10"
           >
             <div className="flex items-start">
               <span className="font-mono text-5xl leading-none font-light text-ink-700 transition-colors duration-500 group-hover:text-white lg:text-6xl">
