@@ -28,8 +28,8 @@ export function ContactSection({ channels }: ContactSectionProps) {
       />
 
       <Reveal delay={200}>
-        <Spotlight className="mt-24 overflow-hidden rounded-[10px] border border-ink-700 bg-gradient-to-b from-ink-800/90 to-ink-950/60 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
-          <div className="flex items-center justify-between border-b border-ink-800 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
+        <Spotlight className="mt-24 overflow-hidden rounded-[10px] border border-white/[0.12] bg-white/[0.03] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
+          <div className="flex items-center justify-between border-b border-white/10 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
             <span className="text-ink-500">
               canais_diretos<span className="blink text-ink-300">_</span>
             </span>
@@ -44,7 +44,7 @@ export function ContactSection({ channels }: ContactSectionProps) {
 
           <ul>
             {channels.map((channel, index) => (
-              <li key={channel.kind} className={index > 0 ? "border-t border-ink-800" : ""}>
+              <li key={channel.kind} className={index > 0 ? "border-t border-white/10" : ""}>
                 <a
                   href={channel.href}
                   target={channel.target}
@@ -52,7 +52,7 @@ export function ContactSection({ channels }: ContactSectionProps) {
                   className="hud-frame group flex flex-col gap-6 p-6 transition-colors duration-500 hover:bg-ink-900/60 sm:flex-row sm:items-center sm:justify-between lg:p-10"
                 >
                   <span className="flex items-center gap-6">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] border border-ink-700 text-ink-300 transition-all duration-500 group-hover:border-ink-400 group-hover:text-white">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] border border-white/10 text-ink-300 transition-all duration-500 group-hover:border-white/30 group-hover:text-white">
                       <ChannelIcon name={channel.kind} className="h-5 w-5" />
                     </span>
                     <span className="flex flex-col gap-1.5">
