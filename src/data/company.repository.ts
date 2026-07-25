@@ -21,8 +21,8 @@ const CHANNELS: readonly ContactChannel[] = [
   new ContactChannel({
     kind: "email",
     label: "E-mail",
-    value: "contato@lumni.dev.br",
-    href: "mailto:contato@lumni.dev.br",
+    value: "contact@lumni.dev.br",
+    href: "mailto:contact@lumni.dev.br",
   }),
   // TODO: número de WhatsApp ainda é fictício.
   new ContactChannel({

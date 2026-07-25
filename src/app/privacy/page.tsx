@@ -23,7 +23,7 @@ export default function PrivacyPage() {
   const company = CompanyRepository.find();
   const email =
     CompanyRepository.findContactChannels().find((channel) => channel.kind === "email")?.value ??
-    "contato@lumni.dev.br";
+    "contact@lumni.dev.br";
 
   return (
     <LegalShell
