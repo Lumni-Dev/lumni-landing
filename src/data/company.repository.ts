@@ -12,7 +12,8 @@ const COMPANY = new Company({
   // O contato não entra aqui: já é a chamada de ação fixa do cabeçalho.
   navigation: [
     { label: "Serviços", href: "#servicos" },
-    { label: "Sistemas / Softwares", href: "#sistemas" },
+    // TEMP: seção de Sistemas/Softwares oculta por enquanto.
+    // { label: "Sistemas / Softwares", href: "#sistemas" },
   ],
 });
 

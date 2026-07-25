@@ -4,16 +4,16 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { ContactSection } from "@/components/sections/contact-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { ServicesSection } from "@/components/sections/services-section";
-import { SystemsSection } from "@/components/sections/systems-section";
+// TEMP: seção de Sistemas/Softwares oculta por enquanto.
+// import { SystemsSection } from "@/components/sections/systems-section";
 import { CompanyRepository } from "@/data/company.repository";
 import { ServiceRepository } from "@/data/service.repository";
-import { SystemRepository } from "@/data/system.repository";
+// import { SystemRepository } from "@/data/system.repository";
 
 export default function HomePage() {
   const company = CompanyRepository.find();
   const channels = CompanyRepository.findContactChannels();
   const services = ServiceRepository.findAll();
-  const systems = SystemRepository.findAll();
 
   return (
     <>
@@ -24,7 +24,8 @@ export default function HomePage() {
       <main className="relative z-10 flex-1">
         <HeroSection company={company} />
         <ServicesSection services={services} />
-        <SystemsSection systems={systems} />
+        {/* TEMP: seção de Sistemas/Softwares oculta por enquanto. */}
+        {/* <SystemsSection systems={SystemRepository.findAll()} /> */}
         <ContactSection channels={channels} />
       </main>
       <SiteFooter company={company} services={services} channels={channels} />
