@@ -2,19 +2,24 @@ import { Section } from "@/components/layout/section";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import type { Service } from "@/domain/models/service";
+import type { LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 interface ServicesSectionProps {
+  locale: LocaleCode;
   services: readonly Service[];
 }
 
-export function ServicesSection({ services }: ServicesSectionProps) {
+export function ServicesSection({ locale, services }: ServicesSectionProps) {
+  const dict = getDictionary(locale);
+
   return (
     <Section id="servicos">
       <SectionHeading
         index="01"
-        label="Serviços"
-        title="Cinco frentes, um só compromisso: software que sustenta o negócio."
-        description="Atuamos do diagnóstico à operação. Você escolhe o ponto de entrada, nós assumimos a responsabilidade técnica de ponta a ponta."
+        label={dict.services.label}
+        title={dict.services.title}
+        description={dict.services.description}
       />
 
       <div className="mt-24 flex flex-col gap-6">

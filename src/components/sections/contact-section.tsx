@@ -4,12 +4,17 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Spotlight } from "@/components/ui/spotlight";
 import type { ContactChannel } from "@/domain/models/contact-channel";
+import type { LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 interface ContactSectionProps {
+  locale: LocaleCode;
   channels: readonly ContactChannel[];
 }
 
-export function ContactSection({ channels }: ContactSectionProps) {
+export function ContactSection({ locale, channels }: ContactSectionProps) {
+  const dict = getDictionary(locale);
+
   return (
     <Section
       id="contato"
@@ -22,23 +27,24 @@ export function ContactSection({ channels }: ContactSectionProps) {
     >
       <SectionHeading
         index="03"
-        label="Contato"
-        title="Vamos conversar sobre o seu próximo passo técnico."
-        description="Conte o problema, não a solução. A primeira conversa é um diagnóstico, sem compromisso e sem proposta genérica: se o caminho certo não passar por nós, dizemos isso também."
+        label={dict.contact.label}
+        title={dict.contact.title}
+        description={dict.contact.description}
       />
 
       <Reveal delay={200}>
         <Spotlight className="mt-24 overflow-hidden rounded-[10px] border border-white/[0.12] bg-white/[0.03] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xl">
           <div className="flex items-center justify-between border-b border-white/10 px-6 py-4 font-mono text-xs tracking-[0.25em] uppercase lg:px-10">
             <span className="text-ink-500">
-              canais_diretos<span className="blink text-ink-300">_</span>
+              {dict.contact.panelTag}
+              <span className="blink text-ink-300">_</span>
             </span>
             <span className="flex items-center gap-2.5 text-ink-300">
               <span aria-hidden="true" className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping bg-white/60" />
                 <span className="relative inline-flex h-2 w-2 bg-white" />
               </span>
-              Disponível
+              {dict.contact.available}
             </span>
           </div>
 
@@ -59,7 +65,10 @@ export function ContactSection({ channels }: ContactSectionProps) {
                       <span className="font-mono text-xs tracking-[0.25em] text-ink-500 uppercase">
                         {channel.label}
                       </span>
-                      <span className="font-mono text-xl font-medium tracking-tight break-all text-white lg:text-2xl">
+                      <span
+                        dir="ltr"
+                        className="font-mono text-xl font-medium tracking-tight break-all text-white lg:text-2xl"
+                      >
                         {channel.value}
                       </span>
                     </span>

@@ -9,26 +9,39 @@ import { ServicesSection } from "@/components/sections/services-section";
 import { CompanyRepository } from "@/data/company.repository";
 import { ServiceRepository } from "@/data/service.repository";
 // import { SystemRepository } from "@/data/system.repository";
+import { toLocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-export default function HomePage() {
-  const company = CompanyRepository.find();
-  const channels = CompanyRepository.findContactChannels();
-  const services = ServiceRepository.findAll();
+interface HomePageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function HomePage({ params }: HomePageProps) {
+  const locale = toLocaleCode((await params).locale);
+  const dict = getDictionary(locale);
+  const company = CompanyRepository.find(locale);
+  const channels = CompanyRepository.findContactChannels(locale);
+  const services = ServiceRepository.findAll(locale);
 
   return (
     <>
-      <SiteHeader companyName={company.name} navigation={company.navigation} />
+      <SiteHeader
+        locale={locale}
+        companyName={company.name}
+        navigation={company.navigation}
+        labels={dict.header}
+      />
       {/* Fixa no viewport, atrás de tudo: o fundo opaco do hero a esconde; o resto da página, transparente, a revela.
           h-full/w-full são obrigatórios: canvas é replaced element e inset-0 sozinho não o estica. */}
       <DotMatrix className="fixed inset-0 z-0 h-full w-full" />
       <main className="relative z-10 flex-1">
-        <HeroSection company={company} />
-        <ServicesSection services={services} />
+        <HeroSection locale={locale} company={company} />
+        <ServicesSection locale={locale} services={services} />
         {/* TEMP: seção de Sistemas/Softwares oculta por enquanto. */}
         {/* <SystemsSection systems={SystemRepository.findAll()} /> */}
-        <ContactSection channels={channels} />
+        <ContactSection locale={locale} channels={channels} />
       </main>
-      <SiteFooter company={company} services={services} channels={channels} />
+      <SiteFooter locale={locale} company={company} services={services} channels={channels} />
     </>
   );
 }

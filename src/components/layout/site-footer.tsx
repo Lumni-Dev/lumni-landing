@@ -1,19 +1,22 @@
-import Link from "next/link";
-
 import { ChannelIcon } from "@/components/icons/channel-icon";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
 import type { Company } from "@/domain/models/company";
 import type { ContactChannel } from "@/domain/models/contact-channel";
 import type { Service } from "@/domain/models/service";
+import { localePath, type LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 interface SiteFooterProps {
+  locale: LocaleCode;
   company: Company;
   services: readonly Service[];
   channels: readonly ContactChannel[];
 }
 
-export function SiteFooter({ company, services, channels }: SiteFooterProps) {
+export function SiteFooter({ locale, company, services, channels }: SiteFooterProps) {
+  const dict = getDictionary(locale);
+
   return (
     <footer className="relative z-10">
       <Container>
@@ -24,8 +27,10 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
               <p className="mt-6 text-sm leading-relaxed text-pretty text-ink-400">{company.description}</p>
             </div>
 
-            <nav aria-label="Serviços">
-              <h2 className="text-xs font-medium tracking-[0.2em] text-ink-500 uppercase">Serviços</h2>
+            <nav aria-label={dict.footer.servicesHeading}>
+              <h2 className="text-xs font-medium tracking-[0.2em] text-ink-500 uppercase">
+                {dict.footer.servicesHeading}
+              </h2>
               <ul className="mt-5 flex flex-col gap-3">
                 {services.map((service) => (
                   <li key={service.id}>
@@ -40,8 +45,10 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
               </ul>
             </nav>
 
-            <nav aria-label="Contato">
-              <h2 className="text-xs font-medium tracking-[0.2em] text-ink-500 uppercase">Contato</h2>
+            <nav aria-label={dict.footer.contactHeading}>
+              <h2 className="text-xs font-medium tracking-[0.2em] text-ink-500 uppercase">
+                {dict.footer.contactHeading}
+              </h2>
               <ul className="mt-5 flex flex-col gap-3">
                 {channels.map((channel) => (
                   <li key={channel.kind}>
@@ -55,7 +62,7 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
                         name={channel.kind}
                         className="h-4 w-4 shrink-0 text-ink-500 transition-colors group-hover:text-white"
                       />
-                      {channel.value}
+                      <span dir="ltr">{channel.value}</span>
                     </a>
                   </li>
                 ))}
@@ -68,24 +75,24 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
               <p className="text-xs text-ink-400">{company.legalLine}</p>
               <p className="text-xs text-ink-500">{company.copyright(new Date().getFullYear())}</p>
             </div>
-            <nav aria-label="Páginas legais" className="flex items-center gap-6">
-              <Link
-                href="/privacy"
+            <nav aria-label={dict.footer.ariaLegalNav} className="flex items-center gap-6">
+              <a
+                href={localePath(locale, "/privacy")}
                 className="text-xs text-ink-500 transition-colors hover:text-white"
               >
-                Privacidade
-              </Link>
-              <Link
-                href="/terms"
+                {dict.footer.privacy}
+              </a>
+              <a
+                href={localePath(locale, "/terms")}
                 className="text-xs text-ink-500 transition-colors hover:text-white"
               >
-                Termos
-              </Link>
+                {dict.footer.terms}
+              </a>
               <a
                 href="#inicio"
                 className="text-xs text-ink-500 transition-colors hover:text-white"
               >
-                Voltar ao topo
+                {dict.footer.backToTop}
               </a>
             </nav>
           </div>

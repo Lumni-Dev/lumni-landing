@@ -2,16 +2,22 @@
 
 import { useEffect, useState } from "react";
 
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
 import type { NavigationLink } from "@/domain/models/company";
+import { rememberLocale } from "@/i18n/client";
+import { LOCALES, localePath, type LocaleCode } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/types";
 
 interface SiteHeaderProps {
+  locale: LocaleCode;
   companyName: string;
   navigation: readonly NavigationLink[];
+  labels: Dictionary["header"];
 }
 
-export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
+export function SiteHeader({ locale, companyName, navigation, labels }: SiteHeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,7 +55,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
       >
         <a
           href="#inicio"
-          aria-label={`${companyName}, ir para o início`}
+          aria-label={labels.ariaHome}
           className="transition-opacity hover:opacity-70"
         >
           <Logo
@@ -59,7 +65,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
           />
         </a>
 
-        <nav aria-label="Navegação principal" className="hidden items-center gap-10 md:flex">
+        <nav aria-label={labels.ariaMainNav} className="hidden items-center gap-10 md:flex">
           {navigation.map((link) => (
             <a
               key={link.href}
@@ -70,11 +76,12 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
               <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-white transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <LanguageSwitcher current={locale} ariaLabel={labels.ariaLanguage} />
           <a
             href="#contato"
             className="rounded-[10px] bg-white px-6 py-2.5 text-sm font-semibold text-ink-950 transition-transform duration-300 hover:scale-105"
           >
-            Fale conosco
+            {labels.contactCta}
           </a>
         </nav>
 
@@ -83,7 +90,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
           onClick={() => setIsMenuOpen((open) => !open)}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
-          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-label={isMenuOpen ? labels.ariaCloseMenu : labels.ariaOpenMenu}
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
         >
           <span
@@ -101,7 +108,7 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
 
       <nav
         id="mobile-navigation"
-        aria-label="Navegação principal"
+        aria-label={labels.ariaMainNav}
         data-open={isMenuOpen}
         className="mobile-menu border-t border-ink-800 bg-ink-950/95 backdrop-blur-xl md:hidden"
       >
@@ -124,8 +131,42 @@ export function SiteHeader({ companyName, navigation }: SiteHeaderProps) {
                 onClick={() => setIsMenuOpen(false)}
                 className="block rounded-[10px] bg-white px-6 py-3 text-center text-sm font-semibold text-ink-950"
               >
-                Fale conosco
+                {labels.contactCta}
               </a>
+            </li>
+            <li className="mt-4 border-t border-ink-800 pt-5">
+              <span className="font-mono text-xs tracking-[0.25em] text-ink-500 uppercase">
+                {labels.ariaLanguage}
+              </span>
+              <div className="mt-4 grid grid-cols-2 gap-1.5">
+                {LOCALES.map((item) => {
+                  const isCurrent = item.code === locale;
+
+                  return (
+                    <a
+                      key={item.code}
+                      href={localePath(item.code, "/")}
+                      hrefLang={item.hreflang}
+                      lang={item.htmlLang}
+                      aria-current={isCurrent ? "true" : undefined}
+                      onClick={() => {
+                        rememberLocale(item.code);
+                        setIsMenuOpen(false);
+                      }}
+                      className={`flex items-center justify-between gap-3 rounded-[10px] border px-3.5 py-2.5 text-sm transition-colors ${
+                        isCurrent
+                          ? "border-white/25 bg-white/10 text-white"
+                          : "border-ink-800 text-ink-300 hover:border-ink-600 hover:text-white"
+                      }`}
+                    >
+                      {item.nativeName}
+                      <span className="font-mono text-[10px] tracking-wider text-ink-500 uppercase">
+                        {item.code}
+                      </span>
+                    </a>
+                  );
+                })}
+              </div>
             </li>
           </ul>
         </Container>

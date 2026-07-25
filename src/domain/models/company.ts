@@ -12,6 +12,8 @@ export interface CompanyProps {
   readonly description: string;
   readonly foundedYear: number;
   readonly navigation: readonly NavigationLink[];
+  /** "Todos os direitos reservados." no idioma corrente. */
+  readonly rightsNotice: string;
 }
 
 export class Company {
@@ -22,6 +24,7 @@ export class Company {
   readonly description: string;
   readonly foundedYear: number;
   readonly navigation: readonly NavigationLink[];
+  readonly rightsNotice: string;
 
   constructor(props: CompanyProps) {
     this.name = props.name;
@@ -31,6 +34,7 @@ export class Company {
     this.description = props.description;
     this.foundedYear = props.foundedYear;
     this.navigation = props.navigation;
+    this.rightsNotice = props.rightsNotice;
   }
 
   get legalLine(): string {
@@ -40,6 +44,6 @@ export class Company {
   copyright(currentYear: number): string {
     const start = this.foundedYear;
     const range = currentYear > start ? `${start} - ${currentYear}` : `${start}`;
-    return `© ${range} ${this.name}. Todos os direitos reservados.`;
+    return `© ${range} ${this.name}. ${this.rightsNotice}`;
   }
 }

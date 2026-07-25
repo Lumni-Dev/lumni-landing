@@ -4,23 +4,24 @@ import { Magnetic } from "@/components/ui/magnetic";
 import { Reveal } from "@/components/ui/reveal";
 import { WordReveal } from "@/components/ui/word-reveal";
 import type { Company } from "@/domain/models/company";
+import type { LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 interface HeroSectionProps {
+  locale: LocaleCode;
   company: Company;
 }
 
-const CAPABILITIES = [
-  "Desenvolvimento sob medida",
-  "Automação de processos",
-  "Consultoria técnica",
-  "Cibersegurança",
-  "Squads dedicados",
-];
+export function HeroSection({ locale, company }: HeroSectionProps) {
+  const dict = getDictionary(locale);
 
-// Trilha larga o bastante para cobrir telas ultrawide sem vão visível.
-const MARQUEE_TRACK = [...CAPABILITIES, ...CAPABILITIES, ...CAPABILITIES];
+  // Trilha larga o bastante para cobrir telas ultrawide sem vão visível.
+  const marqueeTrack = [
+    ...dict.hero.capabilities,
+    ...dict.hero.capabilities,
+    ...dict.hero.capabilities,
+  ];
 
-export function HeroSection({ company }: HeroSectionProps) {
   return (
     <section
       id="inicio"
@@ -55,7 +56,7 @@ export function HeroSection({ company }: HeroSectionProps) {
                   href="#contato"
                   className="group sheen inline-flex items-center justify-center gap-3 rounded-[10px] bg-white px-8 py-4 text-sm font-semibold text-ink-950"
                 >
-                  Iniciar um projeto
+                  {dict.hero.ctaStart}
                 </a>
               </Magnetic>
 
@@ -64,7 +65,7 @@ export function HeroSection({ company }: HeroSectionProps) {
                   href="#servicos"
                   className="inline-flex items-center justify-center rounded-[10px] border border-ink-700 px-8 py-4 text-sm font-semibold text-ink-100 transition-colors duration-300 hover:border-ink-400 hover:text-white"
                 >
-                  Ver serviços
+                  {dict.hero.ctaServices}
                 </a>
               </Magnetic>
             </div>
@@ -81,7 +82,7 @@ export function HeroSection({ company }: HeroSectionProps) {
           <div className="animate-marquee flex shrink-0 group-hover:[animation-play-state:paused]">
             {[0, 1].map((track) => (
               <div key={track} className="flex shrink-0 items-center gap-12 pr-12">
-                {MARQUEE_TRACK.map((item, index) => (
+                {marqueeTrack.map((item, index) => (
                   <span
                     key={`${track}-${index}`}
                     className="flex items-center gap-12 text-xs font-medium tracking-[0.2em] whitespace-nowrap text-ink-500 uppercase"

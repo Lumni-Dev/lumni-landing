@@ -1,44 +1,51 @@
 import { Company } from "@/domain/models/company";
 import { ContactChannel } from "@/domain/models/contact-channel";
+import type { LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-const COMPANY = new Company({
+/** Dados invariantes por idioma; os textos vêm do dicionário do locale. */
+const COMPANY_BASE = {
   name: "Lumni",
   legalName: "Lumni - Serviços Digitais",
   taxId: "65.613.389/0001-96",
-  tagline: "Engenharia de prompt que sua empresa pode confiar.",
-  description:
-    "A Lumni desenvolve sistemas, automatiza processos e acopla engenheiros ao seu time. Do primeiro diagnóstico ao código rodando em produção.",
   foundedYear: 2024,
-  // O contato não entra aqui: já é a chamada de ação fixa do cabeçalho.
-  navigation: [
-    { label: "Serviços", href: "#servicos" },
-    // TEMP: seção de Sistemas/Softwares oculta por enquanto.
-    // { label: "Sistemas / Softwares", href: "#sistemas" },
-  ],
-});
-
-const CHANNELS: readonly ContactChannel[] = [
-  new ContactChannel({
-    kind: "email",
-    label: "E-mail",
-    value: "contact@lumni.dev.br",
-    href: "mailto:contact@lumni.dev.br",
-  }),
-  // TODO: número de WhatsApp ainda é fictício.
-  new ContactChannel({
-    kind: "whatsapp",
-    label: "WhatsApp",
-    value: "+55 (11) 90000-0000",
-    href: "https://wa.me/5511900000000",
-  }),
-];
+} as const;
 
 export class CompanyRepository {
-  static find(): Company {
-    return COMPANY;
+  static find(locale: LocaleCode): Company {
+    const dict = getDictionary(locale);
+
+    return new Company({
+      ...COMPANY_BASE,
+      tagline: dict.company.tagline,
+      description: dict.company.description,
+      rightsNotice: dict.footer.rights,
+      // O contato não entra aqui: já é a chamada de ação fixa do cabeçalho.
+      navigation: [
+        { label: dict.header.navServices, href: "#servicos" },
+        // TEMP: seção de Sistemas/Softwares oculta por enquanto.
+        // { label: "Sistemas / Softwares", href: "#sistemas" },
+      ],
+    });
   }
 
-  static findContactChannels(): readonly ContactChannel[] {
-    return CHANNELS;
+  static findContactChannels(locale: LocaleCode): readonly ContactChannel[] {
+    const dict = getDictionary(locale);
+
+    return [
+      new ContactChannel({
+        kind: "email",
+        label: dict.contact.channels.email,
+        value: "contact@lumni.dev.br",
+        href: "mailto:contact@lumni.dev.br",
+      }),
+      // TODO: número de WhatsApp ainda é fictício.
+      new ContactChannel({
+        kind: "whatsapp",
+        label: dict.contact.channels.whatsapp,
+        value: "+55 (11) 90000-0000",
+        href: "https://wa.me/5511900000000",
+      }),
+    ];
   }
 }

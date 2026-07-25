@@ -3,15 +3,36 @@ import { join } from "node:path";
 
 import { ImageResponse } from "next/og";
 
-import { CompanyRepository } from "@/data/company.repository";
+import { toLocaleCode, type LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-const company = CompanyRepository.find();
-
-export const alt = `${company.name} - ${company.tagline}`;
+export const alt = "Lumni";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function OpengraphImage() {
+/**
+ * A fonte embutida do next/og cobre apenas o alfabeto latino; para os demais
+ * scripts (cirílico, CJK, árabe) o cartão usa o texto em inglês para não
+ * renderizar glifos vazios.
+ */
+const LATIN_SCRIPT_LOCALES: ReadonlySet<LocaleCode> = new Set([
+  "pt",
+  "en",
+  "es",
+  "fr",
+  "de",
+  "it",
+  "nl",
+]);
+
+interface OpengraphImageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function OpengraphImage({ params }: OpengraphImageProps) {
+  const locale = toLocaleCode((await params).locale);
+  const dict = getDictionary(LATIN_SCRIPT_LOCALES.has(locale) ? locale : "en");
+
   const logo = await readFile(
     join(process.cwd(), "public/images/logo-inverse.png"),
     "base64",
@@ -72,7 +93,7 @@ export default async function OpengraphImage() {
               maxWidth: 960,
             }}
           >
-            {company.tagline}
+            {dict.company.tagline}
           </div>
         </div>
 
@@ -89,10 +110,8 @@ export default async function OpengraphImage() {
             paddingTop: 28,
           }}
         >
-          <div style={{ display: "flex" }}>
-            SISTEMAS · AUTOMAÇÃO · CONSULTORIA · SEGURANÇA
-          </div>
-          <div style={{ display: "flex" }}>© {company.foundedYear}</div>
+          <div style={{ display: "flex" }}>{dict.og.strip}</div>
+          <div style={{ display: "flex" }}>© 2024</div>
         </div>
       </div>
     ),
