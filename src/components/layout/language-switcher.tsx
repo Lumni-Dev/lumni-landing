@@ -47,7 +47,7 @@ export function LanguageSwitcher({ current, ariaLabel }: LanguageSwitcherProps) 
         aria-expanded={isOpen}
         aria-haspopup="menu"
         aria-label={ariaLabel}
-        className="flex items-center gap-2 text-sm font-medium text-ink-300 transition-colors hover:text-white"
+        className="flex cursor-pointer items-center gap-2 text-sm font-medium text-ink-300 transition-colors hover:text-white"
       >
         <svg
           aria-hidden="true"
