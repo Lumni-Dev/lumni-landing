@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { ChannelIcon } from "@/components/icons/channel-icon";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
@@ -66,12 +68,26 @@ export function SiteFooter({ company, services, channels }: SiteFooterProps) {
               <p className="text-xs text-ink-400">{company.legalLine}</p>
               <p className="text-xs text-ink-500">{company.copyright(new Date().getFullYear())}</p>
             </div>
-            <a
-              href="#inicio"
-              className="text-xs text-ink-500 transition-colors hover:text-white"
-            >
-              Voltar ao topo
-            </a>
+            <nav aria-label="Páginas legais" className="flex items-center gap-6">
+              <Link
+                href="/privacy"
+                className="text-xs text-ink-500 transition-colors hover:text-white"
+              >
+                Privacidade
+              </Link>
+              <Link
+                href="/terms"
+                className="text-xs text-ink-500 transition-colors hover:text-white"
+              >
+                Termos
+              </Link>
+              <a
+                href="#inicio"
+                className="text-xs text-ink-500 transition-colors hover:text-white"
+              >
+                Voltar ao topo
+              </a>
+            </nav>
           </div>
         </div>
       </Container>
