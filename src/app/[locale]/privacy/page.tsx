@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PrivacyPageProps): Promise<Me
     description: doc.metaDescription,
     alternates: localeAlternates(locale, "/privacy"),
     openGraph: {
-      title: `${doc.metaTitle} | Lumni`,
+      title: `${doc.metaTitle} - Lumni`,
       description: doc.metaDescription,
       url: localePath(locale, "/privacy"),
       type: "article",

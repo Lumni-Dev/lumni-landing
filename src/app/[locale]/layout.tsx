@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: LocaleParams): Promise<Metada
     metadataBase: new URL(SITE_URL),
     title: {
       default: pageTitle,
-      template: `%s | ${company.name}`,
+      template: `%s - ${company.name}`,
     },
     description: company.description,
     applicationName: company.name,

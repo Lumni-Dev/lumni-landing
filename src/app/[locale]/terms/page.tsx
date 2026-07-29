@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: TermsPageProps): Promise<Meta
     description: doc.metaDescription,
     alternates: localeAlternates(locale, "/terms"),
     openGraph: {
-      title: `${doc.metaTitle} | Lumni`,
+      title: `${doc.metaTitle} - Lumni`,
       description: doc.metaDescription,
       url: localePath(locale, "/terms"),
       type: "article",
