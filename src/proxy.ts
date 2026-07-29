@@ -20,7 +20,15 @@ const PUBLIC_FILE = /\.[^/]+$/;
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (PUBLIC_FILE.test(pathname) || pathname.includes("opengraph-image")) return;
+  // Sem matcher efetivo (ou fallback), nunca negociar rotas internas do Next.
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    PUBLIC_FILE.test(pathname) ||
+    pathname.includes("opengraph-image")
+  ) {
+    return;
+  }
 
   const [, first] = pathname.split("/");
 
@@ -51,6 +59,7 @@ export function proxy(request: NextRequest) {
   return NextResponse.rewrite(url);
 }
 
-export const proxyConfig = {
-  matcher: ["/((?!_next|api).*)"],
+/** Nome exigido pelo Next: `config` (não `proxyConfig`). */
+export const config = {
+  matcher: ["/((?!api|_next/static|_next/image|.*\\..*).*)"],
 };

@@ -25,6 +25,7 @@ const de: Dictionary = {
   },
   header: {
     navServices: "Leistungen",
+    navSystems: "Systeme / Software",
     contactCta: "Kontakt aufnehmen",
     ariaHome: "Lumni, zum Anfang",
     ariaMainNav: "Hauptnavigation",
@@ -51,9 +52,9 @@ const de: Dictionary = {
     items: {
       desenvolvimento: {
         title: "Entwicklung von Systemen und Apps",
-        headline: "Vom Discovery bis zum Deployment – ohne technische Schulden im ersten Sprint.",
+        headline: "Vom Discovery bis zum Deployment, ohne technische Schulden im ersten Sprint.",
         description:
-          "Wir bauen maßgeschneiderte digitale Produkte: Webplattformen, mobile Apps und APIs, die kritische Abläufe tragen. Auf Skalierung ausgelegte Architektur, getesteter Code und Continuous Delivery – mit derselben Ingenieursqualität, auf die sich Ihr Betrieb ab dem Tag nach dem Launch verlässt.",
+          "Wir bauen maßgeschneiderte digitale Produkte: Webplattformen, mobile Apps und APIs, die kritische Abläufe tragen. Auf Skalierung ausgelegte Architektur, getesteter Code und Continuous Delivery, mit derselben Ingenieursqualität, auf die sich Ihr Betrieb ab dem Tag nach dem Launch verlässt.",
         deliverables: [
           "Webplattformen und interne Portale",
           "iOS- und Android-Apps",
@@ -65,7 +66,7 @@ const de: Dictionary = {
         title: "Prozessautomatisierung",
         headline: "Wir geben Ihrem Team die Stunden zurück, die die Tabelle verschlingt.",
         description:
-          "Wir erfassen den realen Ablauf Ihrer Operation – nicht den im Handbuch – und beseitigen die repetitive Arbeit, die produktive Kapazität bindet. Integrationen zwischen Systemen, die nicht miteinander sprechen, geplante Routinen und Datenorchestrierung, die menschliche Fehler reduzieren und den Prozess durchgängig auditierbar machen.",
+          "Wir erfassen den realen Ablauf Ihrer Operation, nicht den im Handbuch, und beseitigen die repetitive Arbeit, die produktive Kapazität bindet. Integrationen zwischen Systemen, die nicht miteinander sprechen, geplante Routinen und Datenorchestrierung, die menschliche Fehler reduzieren und den Prozess durchgängig auditierbar machen.",
         deliverables: [
           "Prozessaufnahme und -redesign",
           "Integration von Altsystemen",
@@ -77,7 +78,7 @@ const de: Dictionary = {
         title: "Technologieberatung",
         headline: "Unabhängige Diagnose für Entscheidungen, deren Fehler teuer wären.",
         description:
-          "Wir bewerten Architektur, Stack, Sicherheit und Infrastrukturkosten mit externem Blick und ohne eingebaute kommerzielle Agenda. Sie erhalten einen Entwicklungsplan, priorisiert nach Geschäftswirkung statt nach Markttrends – mit den Kosten und Risiken jedes Wegs, bevor entschieden wird.",
+          "Wir bewerten Architektur, Stack, Sicherheit und Infrastrukturkosten mit externem Blick und ohne eingebaute kommerzielle Agenda. Sie erhalten einen Entwicklungsplan, priorisiert nach Geschäftswirkung statt nach Markttrends, mit den Kosten und Risiken jedes Wegs, bevor entschieden wird.",
         deliverables: [
           "Architektur- und Code-Audit",
           "Sicherheits- und Compliance-Review",
@@ -89,7 +90,7 @@ const de: Dictionary = {
         title: "Cybersicherheit",
         headline: "Wir finden die Schwachstellen, bevor sie Sie finden.",
         description:
-          "Wir schützen, was Ihr Unternehmen nicht verlieren darf: Daten, Verfügbarkeit und Reputation. Wir kartieren die Angriffsfläche, testen die Abwehr kontrolliert und beheben Probleme an der Wurzel – vom Code bis zur Infrastruktur. Sicherheit als kontinuierlicher Prozess mit Monitoring und Incident Response, nicht als Bericht in der Schublade.",
+          "Wir schützen, was Ihr Unternehmen nicht verlieren darf: Daten, Verfügbarkeit und Reputation. Wir kartieren die Angriffsfläche, testen die Abwehr kontrolliert und beheben Probleme an der Wurzel, vom Code bis zur Infrastruktur. Sicherheit als kontinuierlicher Prozess mit Monitoring und Incident Response, nicht als Bericht in der Schublade.",
         deliverables: [
           "Sicherheitsaudit und Penetrationstests",
           "Härtung von Anwendungen und Infrastruktur",
@@ -101,7 +102,7 @@ const de: Dictionary = {
         title: "Entwicklungsunterstützung",
         headline: "Wir docken an wie ein Teil Ihrer Engineering-Organisation.",
         description:
-          "Ingenieure, eingebunden in Ihr Backlog, Ihre Zeremonien und Ihre Code-Standards – mit Lieferungen ab der ersten Woche. Echte Seniorität und Skalierung nach Bedarf, ohne die Fixkosten, die Trägheit und das Risiko eines Einstellungsprozesses, der Monate dauern kann.",
+          "Ingenieure, eingebunden in Ihr Backlog, Ihre Zeremonien und Ihre Code-Standards, mit Lieferungen ab der ersten Woche. Echte Seniorität und Skalierung nach Bedarf, ohne die Fixkosten, die Trägheit und das Risiko eines Einstellungsprozesses, der Monate dauern kann.",
         deliverables: [
           "Dedizierte, multidisziplinäre Squads",
           "Elastische Allokation nach Bedarf",
@@ -111,11 +112,37 @@ const de: Dictionary = {
       },
     },
   },
+  systems: {
+    label: "Proprietäre Systeme",
+    title: "Wir bauen auch eigene Systeme.",
+    description:
+      "Das sind Produkte, die Lumni intern entwickelt, betreibt und weiterentwickelt, bis sie zur Plattform werden. Gehärtet durch den täglichen Einsatz und verfügbar für alle, die sie kennenlernen wollen.",
+    items: {
+      sirius: {
+        name: "Sirius",
+        headline: "Ein KI-Agent auf Ihrem Windows.",
+        description:
+          "Sirius ist der KI-Agent von Lumni für Ihren PC. API-Schlüssel einfügen, Anbieter wählen, und er arbeitet auf Ihrer Maschine: Code, Dateien, Chrome, Skills, Stimme, E-Mail und mehr. Kompatibel mit Claude, GPT, Gemini, DeepSeek und anderen KI-Anbietern.",
+        highlights: [
+          "Läuft unter Windows",
+          "Ihr API-Schlüssel",
+          "Viele Markt-KIs",
+          "Dateien und Terminal",
+          "Skills und Agenten",
+          "Chrome",
+          "Stimme",
+          "E-Mail und Alarme",
+        ],
+        actionLabel: "Sirius entdecken",
+        status: "In Produktion",
+      },
+    },
+  },
   contact: {
     label: "Kontakt",
     title: "Sprechen wir über Ihren nächsten technischen Schritt.",
     description:
-      "Beschreiben Sie das Problem, nicht die Lösung. Das erste Gespräch ist eine Diagnose – unverbindlich und ohne Standardangebot: Führt der richtige Weg nicht über uns, sagen wir Ihnen auch das.",
+      "Beschreiben Sie das Problem, nicht die Lösung. Das erste Gespräch ist eine Diagnose, unverbindlich und ohne Standardangebot: Führt der richtige Weg nicht über uns, sagen wir Ihnen auch das.",
     panelTag: "direkte_kanaele",
     available: "Verfügbar",
     channels: {

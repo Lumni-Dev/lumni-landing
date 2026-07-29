@@ -25,6 +25,7 @@ const nl: Dictionary = {
   },
   header: {
     navServices: "Diensten",
+    navSystems: "Systemen / Software",
     contactCta: "Neem contact op",
     ariaHome: "Lumni, naar het begin",
     ariaMainNav: "Hoofdnavigatie",
@@ -108,6 +109,32 @@ const nl: Dictionary = {
           "Aansluiting op jouw proces en stack",
           "Continue kennisoverdracht",
         ],
+      },
+    },
+  },
+  systems: {
+    label: "Eigen systemen",
+    title: "We bouwen ook eigen systemen.",
+    description:
+      "Dit zijn producten die Lumni intern ontwikkelt, beheert en verder uitbouwt tot een platform. Gehard door dagelijks gebruik en beschikbaar voor wie ze wil leren kennen.",
+    items: {
+      sirius: {
+        name: "Sirius",
+        headline: "Een AI-agent op jouw Windows.",
+        description:
+          "Sirius is de AI-agent van Lumni voor jouw pc. Plak je API-sleutel, kies een provider, en hij werkt op jouw machine: code, bestanden, Chrome, skills, stem, e-mail en meer. Compatibel met Claude, GPT, Gemini, DeepSeek en andere markt-AI's.",
+        highlights: [
+          "Draait op Windows",
+          "Jouw API-sleutel",
+          "Meerdere markt-AI's",
+          "Bestanden en terminal",
+          "Skills en agents",
+          "Chrome",
+          "Stem",
+          "E-mail en alarmen",
+        ],
+        actionLabel: "Ontmoet Sirius",
+        status: "In productie",
       },
     },
   },

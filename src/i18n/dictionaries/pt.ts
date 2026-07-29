@@ -27,6 +27,7 @@ const pt: Dictionary = {
   },
   header: {
     navServices: "Serviços",
+    navSystems: "Sistemas / Softwares",
     contactCta: "Fale conosco",
     ariaHome: "Lumni, ir para o início",
     ariaMainNav: "Navegação principal",
@@ -110,6 +111,32 @@ const pt: Dictionary = {
           "Aderência ao seu processo e stack",
           "Transferência de conhecimento contínua",
         ],
+      },
+    },
+  },
+  systems: {
+    label: "Sistemas proprietários",
+    title: "Também fazemos sistemas próprios.",
+    description:
+      "São produtos que a Lumni desenvolve, opera e evolui internamente até virarem plataforma. Endurecidos pelo uso diário e disponíveis para quem quiser conhecer.",
+    items: {
+      sirius: {
+        name: "Sirius",
+        headline: "Agente de IA no seu Windows.",
+        description:
+          "Sirius é o agente de IA da Lumni para o seu PC. Você cola a sua chave de API, escolhe o provedor e ele trabalha na sua máquina: programa, edita arquivos, usa o Chrome, skills, voz, e-mail e mais. Compatível com Claude, GPT, Gemini, DeepSeek e outras IAs do mercado.",
+        highlights: [
+          "Roda no Windows",
+          "Sua chave de API",
+          "Várias IAs do mercado",
+          "Arquivos e terminal",
+          "Skills e agentes",
+          "Chrome",
+          "Voz",
+          "E-mail e alarmes",
+        ],
+        actionLabel: "Conhecer o Sirius",
+        status: "Em produção",
       },
     },
   },
@@ -250,7 +277,7 @@ const pt: Dictionary = {
         "Como a Lumni coleta, usa e protege os seus dados pessoais, incluindo o login com Google, GitHub e LinkedIn.",
       title: "Política de Privacidade",
       intro:
-        "Esta Política explica como a {legalName} ({name}) trata os seus dados pessoais quando você usa o nosso site e os nossos produtos, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).",
+        "Esta Política explica como a {legalName} ({name}) trata os seus dados pessoais quando você usa o nosso site e os nossos produtos, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD).",
       sections: [
         {
           heading: "1. Quem é o controlador dos dados",

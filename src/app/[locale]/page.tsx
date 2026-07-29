@@ -4,11 +4,10 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { ContactSection } from "@/components/sections/contact-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { ServicesSection } from "@/components/sections/services-section";
-// TEMP: seção de Sistemas/Softwares oculta por enquanto.
-// import { SystemsSection } from "@/components/sections/systems-section";
+import { SystemsSection } from "@/components/sections/systems-section";
 import { CompanyRepository } from "@/data/company.repository";
 import { ServiceRepository } from "@/data/service.repository";
-// import { SystemRepository } from "@/data/system.repository";
+import { SystemRepository } from "@/data/system.repository";
 import { toLocaleCode } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -22,6 +21,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const company = CompanyRepository.find(locale);
   const channels = CompanyRepository.findContactChannels(locale);
   const services = ServiceRepository.findAll(locale);
+  const systems = SystemRepository.findAll(locale);
 
   return (
     <>
@@ -37,8 +37,7 @@ export default async function HomePage({ params }: HomePageProps) {
       <main className="relative z-10 flex-1">
         <HeroSection locale={locale} company={company} />
         <ServicesSection locale={locale} services={services} />
-        {/* TEMP: seção de Sistemas/Softwares oculta por enquanto. */}
-        {/* <SystemsSection systems={SystemRepository.findAll()} /> */}
+        <SystemsSection locale={locale} systems={systems} />
         <ContactSection locale={locale} channels={channels} />
       </main>
       <SiteFooter locale={locale} company={company} services={services} channels={channels} />

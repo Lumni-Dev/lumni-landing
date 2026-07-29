@@ -26,6 +26,7 @@ const en: Dictionary = {
   },
   header: {
     navServices: "Services",
+    navSystems: "Systems / Software",
     contactCta: "Talk to us",
     ariaHome: "Lumni, go to top",
     ariaMainNav: "Main navigation",
@@ -66,7 +67,7 @@ const en: Dictionary = {
         title: "Process automation",
         headline: "We give your team back the hours the spreadsheet consumes.",
         description:
-          "We map your operation's real workflow — not the one in the manual — and eliminate the repetitive work that drains productive capacity. Integrations between systems that don't talk to each other, scheduled routines and data orchestration that reduce human error and make the process auditable end to end.",
+          "We map your operation's real workflow, not the one in the manual, and eliminate the repetitive work that drains productive capacity. Integrations between systems that don't talk to each other, scheduled routines and data orchestration that reduce human error and make the process auditable end to end.",
         deliverables: [
           "Process mapping and redesign",
           "Integration between legacy systems",
@@ -90,7 +91,7 @@ const en: Dictionary = {
         title: "Cybersecurity",
         headline: "We find the flaws before they find you.",
         description:
-          "We protect what your business cannot afford to lose: data, availability and reputation. We map the attack surface, test defenses in a controlled way and fix issues at the root, from code to infrastructure. Security as a continuous process, with monitoring and incident response — not a report left in a drawer.",
+          "We protect what your business cannot afford to lose: data, availability and reputation. We map the attack surface, test defenses in a controlled way and fix issues at the root, from code to infrastructure. Security as a continuous process, with monitoring and incident response, not a report left in a drawer.",
         deliverables: [
           "Security audit and penetration testing",
           "Application and infrastructure hardening",
@@ -112,11 +113,37 @@ const en: Dictionary = {
       },
     },
   },
+  systems: {
+    label: "Proprietary systems",
+    title: "We also build our own systems.",
+    description:
+      "These are products Lumni develops, operates and evolves internally until they become a platform. Hardened by daily use and available for anyone who wants to get to know them.",
+    items: {
+      sirius: {
+        name: "Sirius",
+        headline: "An AI agent on your Windows PC.",
+        description:
+          "Sirius is Lumni's AI agent for your computer. Paste your API key, pick a provider, and it works on your machine: coding, files, Chrome, skills, voice, email and more. Compatible with Claude, GPT, Gemini, DeepSeek and other market AIs.",
+        highlights: [
+          "Runs on Windows",
+          "Your API key",
+          "Many market AIs",
+          "Files and terminal",
+          "Skills and agents",
+          "Chrome",
+          "Voice",
+          "Email and alarms",
+        ],
+        actionLabel: "Meet Sirius",
+        status: "In production",
+      },
+    },
+  },
   contact: {
     label: "Contact",
     title: "Let's talk about your next technical step.",
     description:
-      "Tell us the problem, not the solution. The first conversation is a diagnosis — no commitment and no generic proposal: if the right path doesn't run through us, we'll say so too.",
+      "Tell us the problem, not the solution. The first conversation is a diagnosis, no commitment and no generic proposal: if the right path doesn't run through us, we'll say so too.",
     panelTag: "direct_channels",
     available: "Available",
     channels: {
@@ -251,7 +278,7 @@ const en: Dictionary = {
         "How Lumni collects, uses and protects your personal data, including sign-in with Google, GitHub and LinkedIn.",
       title: "Privacy Policy",
       intro:
-        "This Policy explains how {legalName} ({name}) processes your personal data when you use our website and products, in accordance with the Brazilian General Data Protection Law (Law No. 13,709/2018 – LGPD).",
+        "This Policy explains how {legalName} ({name}) processes your personal data when you use our website and products, in accordance with the Brazilian General Data Protection Law (Law No. 13,709/2018, LGPD).",
       sections: [
         {
           heading: "1. Who controls your data",

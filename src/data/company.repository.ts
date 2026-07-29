@@ -23,8 +23,7 @@ export class CompanyRepository {
       // O contato não entra aqui: já é a chamada de ação fixa do cabeçalho.
       navigation: [
         { label: dict.header.navServices, href: "#servicos" },
-        // TEMP: seção de Sistemas/Softwares oculta por enquanto.
-        // { label: "Sistemas / Softwares", href: "#sistemas" },
+        { label: dict.header.navSystems, href: "#sistemas" },
       ],
     });
   }

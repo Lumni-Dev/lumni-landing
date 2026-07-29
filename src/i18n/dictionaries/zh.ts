@@ -25,6 +25,7 @@ const zh: Dictionary = {
   },
   header: {
     navServices: "服务",
+    navSystems: "系统 / 软件",
     contactCta: "联系我们",
     ariaHome: "Lumni，回到顶部",
     ariaMainNav: "主导航",
@@ -47,7 +48,7 @@ const zh: Dictionary = {
         title: "系统与应用开发",
         headline: "从探索到上线，第一个冲刺就零技术债。",
         description:
-          "我们打造量身定制的数字产品：支撑关键业务的 Web 平台、移动应用和 API。面向扩展的架构、经过测试的代码和持续交付——上线次日起，您的业务所依赖的正是这样的工程能力。",
+          "我们打造量身定制的数字产品：支撑关键业务的 Web 平台、移动应用和 API。面向扩展的架构、经过测试的代码和持续交付, 上线次日起，您的业务所依赖的正是这样的工程能力。",
         deliverables: [
           "Web 平台与内部门户",
           "iOS 与 Android 应用",
@@ -59,7 +60,7 @@ const zh: Dictionary = {
         title: "流程自动化",
         headline: "把被表格吞噬的时间还给您的团队。",
         description:
-          "我们梳理业务的真实流程——而不是手册里的流程——并消除消耗产能的重复劳动。打通互不相通的系统、编排定时任务与数据流，减少人为错误，让流程端到端可审计。",
+          "我们梳理业务的真实流程, 而不是手册里的流程, 并消除消耗产能的重复劳动。打通互不相通的系统、编排定时任务与数据流，减少人为错误，让流程端到端可审计。",
         deliverables: [
           "流程梳理与重构",
           "遗留系统集成",
@@ -105,11 +106,37 @@ const zh: Dictionary = {
       },
     },
   },
+  systems: {
+    label: "自有系统",
+    title: "我们也打造自有系统。",
+    description:
+      "这些是 Lumni 内部开发、运营并持续演进直至成为平台的产品。经日常使用打磨，欢迎了解。",
+    items: {
+      sirius: {
+        name: "Sirius",
+        headline: "运行在 Windows 上的 AI 代理。",
+        description:
+          "Sirius 是 Lumni 面向电脑的 AI 代理。粘贴 API 密钥、选择供应商后，在本机处理代码、文件、Chrome、skills、语音、邮件等。兼容 Claude、GPT、Gemini、DeepSeek 及其他市场 AI。",
+        highlights: [
+          "运行于 Windows",
+          "你的 API 密钥",
+          "多种市场 AI",
+          "文件与终端",
+          "Skills 与代理",
+          "Chrome",
+          "语音",
+          "邮件与闹钟",
+        ],
+        actionLabel: "了解 Sirius",
+        status: "已上线",
+      },
+    },
+  },
   contact: {
     label: "联系",
     title: "聊聊您的下一步技术规划。",
     description:
-      "告诉我们问题，而不是解决方案。第一次交流是一次诊断——没有约束，也没有千篇一律的方案：如果正确的路不经过我们，我们也会如实相告。",
+      "告诉我们问题，而不是解决方案。第一次交流是一次诊断, 没有约束，也没有千篇一律的方案：如果正确的路不经过我们，我们也会如实相告。",
     panelTag: "direct_channels",
     available: "在线",
     channels: {

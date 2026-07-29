@@ -5,11 +5,22 @@ export type ServiceId =
   | "ciberseguranca"
   | "suporte";
 
+export type SystemId = "sirius";
+
 export interface ServiceContent {
   title: string;
   headline: string;
   description: string;
   deliverables: string[];
+}
+
+export interface SystemContent {
+  name: string;
+  headline: string;
+  description: string;
+  highlights: string[];
+  actionLabel: string;
+  status: string;
 }
 
 /**
@@ -45,6 +56,7 @@ export interface Dictionary {
   };
   header: {
     navServices: string;
+    navSystems: string;
     contactCta: string;
     ariaHome: string;
     ariaMainNav: string;
@@ -62,6 +74,12 @@ export interface Dictionary {
     title: string;
     description: string;
     items: Record<ServiceId, ServiceContent>;
+  };
+  systems: {
+    label: string;
+    title: string;
+    description: string;
+    items: Record<SystemId, SystemContent>;
   };
   contact: {
     label: string;

@@ -25,6 +25,7 @@ const es: Dictionary = {
   },
   header: {
     navServices: "Servicios",
+    navSystems: "Sistemas / Software",
     contactCta: "Habla con nosotros",
     ariaHome: "Lumni, ir al inicio",
     ariaMainNav: "Navegación principal",
@@ -108,6 +109,32 @@ const es: Dictionary = {
           "Adherencia a tu proceso y stack",
           "Transferencia de conocimiento continua",
         ],
+      },
+    },
+  },
+  systems: {
+    label: "Sistemas propios",
+    title: "También hacemos sistemas propios.",
+    description:
+      "Son productos que Lumni desarrolla, opera y evoluciona internamente hasta convertirlos en plataforma. Endurecidos por el uso diario y disponibles para quien quiera conocerlos.",
+    items: {
+      sirius: {
+        name: "Sirius",
+        headline: "Agente de IA en tu Windows.",
+        description:
+          "Sirius es el agente de IA de Lumni para tu PC. Pegas tu clave de API, eliges el proveedor y trabaja en tu máquina: código, archivos, Chrome, skills, voz, correo y más. Compatible con Claude, GPT, Gemini, DeepSeek y otras IAs del mercado.",
+        highlights: [
+          "Corre en Windows",
+          "Tu clave de API",
+          "Varias IAs del mercado",
+          "Archivos y terminal",
+          "Skills y agentes",
+          "Chrome",
+          "Voz",
+          "Correo y alarmas",
+        ],
+        actionLabel: "Conocer Sirius",
+        status: "En producción",
       },
     },
   },

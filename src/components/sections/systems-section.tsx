@@ -3,19 +3,24 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Spotlight } from "@/components/ui/spotlight";
 import type { System } from "@/domain/models/system";
+import type { LocaleCode } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 interface SystemsSectionProps {
+  locale: LocaleCode;
   systems: readonly System[];
 }
 
-export function SystemsSection({ systems }: SystemsSectionProps) {
+export function SystemsSection({ locale, systems }: SystemsSectionProps) {
+  const dict = getDictionary(locale);
+
   return (
     <Section id="sistemas">
       <SectionHeading
         index="02"
-        label="Sistemas proprietários"
-        title="Também fazemos sistemas próprios."
-        description="São produtos que a Lumni desenvolve, opera e evolui internamente até virarem plataforma. Endurecidos pelo uso diário e disponíveis para quem quiser conhecer."
+        label={dict.systems.label}
+        title={dict.systems.title}
+        description={dict.systems.description}
       />
 
       <div className="mt-24 flex flex-col gap-8">
@@ -31,7 +36,13 @@ export function SystemsSection({ systems }: SystemsSectionProps) {
 
               <div className="p-6 lg:p-10">
                 <div className="max-w-2xl">
-                  <h3 className="text-4xl font-semibold tracking-tight text-white lg:text-5xl">
+                  <h3
+                    className={
+                      system.id === "sirius"
+                        ? "font-logo text-4xl font-semibold tracking-[0.18em] text-white uppercase lg:text-5xl"
+                        : "text-4xl font-semibold tracking-tight text-white lg:text-5xl"
+                    }
+                  >
                     {system.name}
                   </h3>
                   <p className="mt-4 font-mono text-sm tracking-wide text-ink-300 uppercase">
