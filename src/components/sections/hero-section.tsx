@@ -40,11 +40,11 @@ export function HeroSection({ locale, company }: HeroSectionProps) {
           <WordReveal
             as="h1"
             text={company.tagline}
-            className="max-w-5xl text-5xl leading-[0.98] font-semibold tracking-[-0.03em] text-balance text-white sm:text-6xl lg:text-7xl xl:text-8xl"
+            className="max-w-5xl text-4xl leading-[0.98] font-semibold tracking-[-0.03em] text-balance text-white sm:text-5xl lg:text-6xl xl:text-7xl"
           />
 
           <Reveal delay={100}>
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-pretty text-ink-300 lg:text-xl">
+            <p className="mt-8 max-w-2xl text-base leading-relaxed text-pretty text-ink-300 lg:text-lg">
               {company.description}
             </p>
           </Reveal>
