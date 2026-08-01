@@ -38,7 +38,7 @@ export function SystemsSection({ locale, systems }: SystemsSectionProps) {
                 <div className="max-w-2xl">
                   <h3
                     className={
-                      system.id === "sirius"
+                      system.id === "sirius" || system.id === "disys"
                         ? "font-logo text-4xl font-semibold tracking-[0.18em] text-white uppercase lg:text-5xl"
                         : "text-4xl font-semibold tracking-tight text-white lg:text-5xl"
                     }
