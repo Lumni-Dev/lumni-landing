@@ -137,6 +137,24 @@ const en: Dictionary = {
         actionLabel: "Meet Sirius",
         status: "In production",
       },
+      disys: {
+        name: "Disys",
+        headline: "Human resources ERP.",
+        description:
+          "Disys is Lumni's HR ERP for recruiting and hiring. It connects companies, jobs, candidates and processes in one place: client and unit records, job postings with levels and salary ranges, a searchable base of talent and resumes, and a visual drag and drop pipeline to move candidates between stages. Invite your team by email with per-page permissions and sign in with Google or LinkedIn only, with no passwords to manage.",
+        highlights: [
+          "Recruiting and hiring",
+          "Companies and jobs",
+          "Candidate base",
+          "Drag and drop pipeline",
+          "Per-page permissions",
+          "Google and LinkedIn login",
+          "Instant search",
+          "No passwords",
+        ],
+        actionLabel: "Explore Disys",
+        status: "In production",
+      },
     },
   },
   contact: {

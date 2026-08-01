@@ -136,6 +136,24 @@ const ko: Dictionary = {
         actionLabel: "Sirius 알아보기",
         status: "운영 중",
       },
+      disys: {
+        name: "Disys",
+        headline: "인적 자원 ERP.",
+        description:
+          "Disys는 채용과 고용을 위한 Lumni의 HR ERP입니다. 기업, 채용 공고, 지원자, 프로세스를 한곳에서 연결합니다. 고객사와 사업장 기록, 직급과 급여 범위를 갖춘 채용 공고, 검색 가능한 인재와 이력서 데이터베이스, 지원자를 단계별로 이동시키는 시각적 드래그 앤 드롭 파이프라인을 제공합니다. 페이지별 권한과 함께 이메일로 팀원을 초대하고, 관리할 비밀번호 없이 Google 또는 LinkedIn으로만 로그인합니다.",
+        highlights: [
+          "채용과 고용",
+          "기업과 채용 공고",
+          "지원자 데이터베이스",
+          "드래그 앤 드롭 파이프라인",
+          "페이지별 권한",
+          "Google과 LinkedIn 로그인",
+          "즉시 검색",
+          "비밀번호 없음",
+        ],
+        actionLabel: "Disys 알아보기",
+        status: "운영 중",
+      },
     },
   },
   contact: {

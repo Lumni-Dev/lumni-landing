@@ -136,6 +136,24 @@ const nl: Dictionary = {
         actionLabel: "Ontmoet Sirius",
         status: "In productie",
       },
+      disys: {
+        name: "Disys",
+        headline: "ERP voor human resources.",
+        description:
+          "Disys is de HR-ERP van Lumni voor werving en selectie. Het verbindt bedrijven, vacatures, kandidaten en processen op één plek: klant- en vestigingsgegevens, vacatures met niveaus en salarisschalen, een doorzoekbare basis van talent en cv's, en een visuele drag-and-drop-pijplijn om kandidaten tussen fases te verplaatsen. Nodig je team uit via e-mail met rechten per pagina en log alleen in met Google of LinkedIn, zonder wachtwoorden om te beheren.",
+        highlights: [
+          "Werving en selectie",
+          "Bedrijven en vacatures",
+          "Kandidatenbasis",
+          "Drag-and-drop-pijplijn",
+          "Rechten per pagina",
+          "Inloggen met Google en LinkedIn",
+          "Directe zoekfunctie",
+          "Geen wachtwoorden",
+        ],
+        actionLabel: "Ontdek Disys",
+        status: "In productie",
+      },
     },
   },
   contact: {

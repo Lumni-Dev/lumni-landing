@@ -136,6 +136,24 @@ const de: Dictionary = {
         actionLabel: "Sirius entdecken",
         status: "In Produktion",
       },
+      disys: {
+        name: "Disys",
+        headline: "ERP für das Personalwesen.",
+        description:
+          "Disys ist das HR-ERP von Lumni für Recruiting und Einstellung. Es verbindet Unternehmen, Stellen, Kandidaten und Prozesse an einem Ort: Kunden- und Standortdaten, Stellenausschreibungen mit Leveln und Gehaltsspannen, eine durchsuchbare Basis aus Talenten und Lebensläufen sowie eine visuelle Drag-and-drop-Pipeline, um Kandidaten zwischen den Phasen zu bewegen. Laden Sie Ihr Team per E-Mail mit Berechtigungen pro Seite ein und melden Sie sich ausschließlich mit Google oder LinkedIn an, ganz ohne Passwörter zu verwalten.",
+        highlights: [
+          "Recruiting und Einstellung",
+          "Unternehmen und Stellen",
+          "Kandidatenbasis",
+          "Drag-and-drop-Pipeline",
+          "Berechtigungen pro Seite",
+          "Login mit Google und LinkedIn",
+          "Sofortsuche",
+          "Ohne Passwörter",
+        ],
+        actionLabel: "Disys entdecken",
+        status: "In Produktion",
+      },
     },
   },
   contact: {

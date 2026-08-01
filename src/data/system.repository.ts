@@ -9,6 +9,7 @@ import type { SystemId } from "@/i18n/types";
  */
 const CATALOG_BASE: readonly { id: SystemId; url: string }[] = [
   { id: "sirius", url: "https://sirius.lumni.dev.br" },
+  { id: "disys", url: "https://disys.lumni.dev.br" },
 ];
 
 export class SystemRepository {

@@ -136,6 +136,24 @@ const it: Dictionary = {
         actionLabel: "Scopri Sirius",
         status: "In produzione",
       },
+      disys: {
+        name: "Disys",
+        headline: "ERP per le risorse umane.",
+        description:
+          "Disys è l'ERP HR di Lumni per il reclutamento e le assunzioni. Collega aziende, posizioni, candidati e processi in un unico posto: anagrafiche di clienti e unità, annunci di lavoro con livelli e fasce salariali, una base ricercabile di talenti e curriculum, e una pipeline visiva con drag and drop per spostare i candidati tra le fasi. Invita il tuo team via e-mail con permessi per pagina e accedi solo con Google o LinkedIn, senza password da gestire.",
+        highlights: [
+          "Reclutamento e assunzioni",
+          "Aziende e posizioni",
+          "Base di candidati",
+          "Pipeline con drag and drop",
+          "Permessi per pagina",
+          "Accesso con Google e LinkedIn",
+          "Ricerca istantanea",
+          "Senza password",
+        ],
+        actionLabel: "Scopri Disys",
+        status: "In produzione",
+      },
     },
   },
   contact: {

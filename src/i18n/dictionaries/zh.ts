@@ -130,6 +130,24 @@ const zh: Dictionary = {
         actionLabel: "了解 Sirius",
         status: "已上线",
       },
+      disys: {
+        name: "Disys",
+        headline: "人力资源 ERP。",
+        description:
+          "Disys 是 Lumni 面向招聘与录用的人力资源 ERP。它将企业、职位、候选人和流程整合到一个平台：客户与部门档案、带职级和薪资范围的职位发布、可搜索的人才与简历库，以及可视化的拖放流水线，用于在各阶段之间移动候选人。通过邮件邀请团队成员并按页面分配权限，仅使用 Google 或 LinkedIn 登录，无需管理任何密码。",
+        highlights: [
+          "招聘与录用",
+          "企业与职位",
+          "候选人库",
+          "拖放式流水线",
+          "按页面权限",
+          "Google 与 LinkedIn 登录",
+          "即时搜索",
+          "无需密码",
+        ],
+        actionLabel: "了解 Disys",
+        status: "已上线",
+      },
     },
   },
   contact: {
