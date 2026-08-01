@@ -188,7 +188,7 @@ const en: Dictionary = {
     terms: {
       metaTitle: "Terms of Use",
       metaDescription:
-        "The rules for using Lumni's website and products, including social login access.",
+        "The rules for using Lumni's websites and systems, including social login access.",
       title: "Terms of Use",
       intro:
         "These Terms govern the use of the website and products offered by {legalName} ({name}). By accessing or using our services, you agree to these Terms.",
@@ -205,7 +205,7 @@ const en: Dictionary = {
           heading: "2. Description of the service",
           body: [
             {
-              p: "{name} develops systems and provides software products, including applications with an intelligent assistant. Features may evolve, be added or be discontinued over time.",
+              p: "{name} develops and provides several systems and software products, each with its own features, and these Terms apply to all of them. Features may evolve, be added or be discontinued over time.",
             },
           ],
         },
@@ -213,7 +213,7 @@ const en: Dictionary = {
           heading: "3. Account and access",
           body: [
             {
-              p: "Access may be provided through social login (Google, GitHub or LinkedIn). You are responsible for keeping the account used to authenticate secure and for all activity carried out through it. Notify us immediately in case of unauthorized use.",
+              p: "Access to each system may be provided through social login, using providers such as Google, GitHub or LinkedIn, as available in the product. You are responsible for keeping the account used to authenticate secure and for all activity carried out through it. Notify us immediately in case of unauthorized use.",
             },
           ],
         },
@@ -293,7 +293,7 @@ const en: Dictionary = {
     privacy: {
       metaTitle: "Privacy Policy",
       metaDescription:
-        "How Lumni collects, uses and protects your personal data, including sign-in with Google, GitHub and LinkedIn.",
+        "How Lumni collects, uses and protects your personal data across its websites and systems, including social login.",
       title: "Privacy Policy",
       intro:
         "This Policy explains how {legalName} ({name}) processes your personal data when you use our website and products, in accordance with the Brazilian General Data Protection Law (Law No. 13,709/2018, LGPD).",
@@ -312,8 +312,8 @@ const en: Dictionary = {
             { p: "We collect only what is necessary to authenticate you and provide the service:" },
             {
               list: [
-                "**Account data (social login).** When you sign in with Google, GitHub or LinkedIn, we receive from the provider the basic data you authorize: name, e-mail address (and whether it is verified), profile picture and a unique identifier of your account with the provider.",
-                "**Content you create.** Information you record in the application (for example: notes, instructions, agents, schedules, alarms, conversation history and settings).",
+                "**Account data (social login).** When you sign in through social login, using providers such as Google, GitHub or LinkedIn, we receive from the provider the basic data you authorize: name, e-mail address (and whether it is verified), profile picture and a unique identifier of your account with the provider.",
+                "**Content you create.** Information you record or submit when using each system, according to the product's features (for example: records, text, files, preferences and settings).",
                 "**Essential technical data.** The minimum information required for operation and security, such as access logs and session identifiers.",
               ],
             },
@@ -346,10 +346,10 @@ const en: Dictionary = {
           ],
         },
         {
-          heading: "5. Sign-in with Google, GitHub and LinkedIn",
+          heading: "5. Social login",
           body: [
             {
-              p: "When you choose to sign in with a provider, you are taken to its official screen and decide whether to authorize the sharing of your basic profile data. We receive only that information and do **not** publish anything, send messages or access content beyond the basic profile and e-mail. You can revoke this access at any time in the security settings of the respective provider.",
+              p: "When you choose to sign in with a social login provider, you are taken to its official screen and decide whether to authorize the sharing of your basic profile data. We receive only that information and do **not** publish anything, send messages or access content beyond the basic profile and e-mail. You can revoke this access at any time in the security settings of the respective provider.",
             },
           ],
         },

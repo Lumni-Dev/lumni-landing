@@ -204,7 +204,7 @@ const pt: Dictionary = {
           heading: "2. Descrição do serviço",
           body: [
             {
-              p: "A {name} desenvolve sistemas e disponibiliza produtos de software, incluindo aplicativos com assistente inteligente. Os recursos podem evoluir, ser adicionados ou descontinuados ao longo do tempo.",
+              p: "A {name} desenvolve e disponibiliza diversos sistemas e produtos de software, cada um com as suas próprias funcionalidades, e estes Termos se aplicam a todos eles. Os recursos podem evoluir, ser adicionados ou descontinuados ao longo do tempo.",
             },
           ],
         },
@@ -212,7 +212,7 @@ const pt: Dictionary = {
           heading: "3. Conta e acesso",
           body: [
             {
-              p: "O acesso pode ser feito por login social (Google, GitHub ou LinkedIn). Você é responsável por manter a segurança da conta usada para autenticar e por toda atividade realizada por meio dela. Avise-nos imediatamente em caso de uso não autorizado.",
+              p: "O acesso a cada sistema pode ser feito por login social, por meio de provedores como Google, GitHub ou LinkedIn, conforme disponível no produto. Você é responsável por manter a segurança da conta usada para autenticar e por toda atividade realizada por meio dela. Avise-nos imediatamente em caso de uso não autorizado.",
             },
           ],
         },
@@ -292,7 +292,7 @@ const pt: Dictionary = {
     privacy: {
       metaTitle: "Política de Privacidade",
       metaDescription:
-        "Como a Lumni coleta, usa e protege os seus dados pessoais, incluindo o login com Google, GitHub e LinkedIn.",
+        "Como a Lumni coleta, usa e protege os seus dados pessoais nos seus sites e sistemas, incluindo o login social.",
       title: "Política de Privacidade",
       intro:
         "Esta Política explica como a {legalName} ({name}) trata os seus dados pessoais quando você usa o nosso site e os nossos produtos, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD).",
@@ -311,8 +311,8 @@ const pt: Dictionary = {
             { p: "Coletamos apenas o necessário para autenticar e prestar o serviço:" },
             {
               list: [
-                "**Dados de conta (login social).** Quando você entra com Google, GitHub ou LinkedIn, recebemos do provedor os dados básicos que você autoriza: nome, endereço de e-mail (e se ele é verificado), foto de perfil e um identificador único da sua conta no provedor.",
-                "**Conteúdo que você cria.** Informações que você registra no aplicativo (por exemplo: anotações, instruções, agentes, agendamentos, alarmes, histórico de conversas e configurações).",
+                "**Dados de conta (login social).** Quando você entra por login social, por meio de provedores como Google, GitHub ou LinkedIn, recebemos do provedor os dados básicos que você autoriza: nome, endereço de e-mail (e se ele é verificado), foto de perfil e um identificador único da sua conta no provedor.",
+                "**Conteúdo que você cria.** Informações que você registra ou envia ao usar cada sistema, conforme as funcionalidades do produto (por exemplo: cadastros, textos, arquivos, preferências e configurações).",
                 "**Dados técnicos essenciais.** Informações mínimas necessárias ao funcionamento e à segurança, como registros de acesso e identificadores de sessão.",
               ],
             },
@@ -345,10 +345,10 @@ const pt: Dictionary = {
           ],
         },
         {
-          heading: "5. Login com Google, GitHub e LinkedIn",
+          heading: "5. Login social",
           body: [
             {
-              p: "Ao escolher entrar com um provedor, você é levado à tela oficial dele e decide se autoriza o compartilhamento dos dados básicos do seu perfil. Recebemos apenas essas informações e **não** publicamos nada, não enviamos mensagens e não acessamos conteúdos além do perfil básico e do e-mail. Você pode revogar esse acesso a qualquer momento nas configurações de segurança do respectivo provedor.",
+              p: "Ao escolher entrar com um provedor de login social, você é levado à tela oficial dele e decide se autoriza o compartilhamento dos dados básicos do seu perfil. Recebemos apenas essas informações e **não** publicamos nada, não enviamos mensagens e não acessamos conteúdos além do perfil básico e do e-mail. Você pode revogar esse acesso a qualquer momento nas configurações de segurança do respectivo provedor.",
             },
           ],
         },
