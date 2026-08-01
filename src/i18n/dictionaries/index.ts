@@ -34,9 +34,10 @@ export function getDictionary(locale: LocaleCode): Dictionary {
 }
 
 /**
- * Documentos legais completos existem em pt e en. Os demais idiomas recebem a
- * versão em inglês, acompanhada da nota de cortesia do próprio idioma
- * (dictionary.legal.courtesyNote).
+ * Cada idioma tem os documentos legais traduzidos (com a nota de cortesia em
+ * dictionary.legal.courtesyNote informando que a versão em português prevalece).
+ * O fallback para en é uma rede de segurança caso algum idioma fique sem o
+ * documento.
  */
 export function getLegalDoc(locale: LocaleCode, kind: "terms" | "privacy"): LegalDocContent {
   const doc = DICTIONARIES[locale].legal[kind] ?? DICTIONARIES.en.legal[kind];
