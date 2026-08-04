@@ -122,10 +122,10 @@ const de: Dictionary = {
         name: "Sirius",
         headline: "Ein KI-Agent auf Ihrem Windows.",
         description:
-          "Sirius ist der KI-Agent von Lumni für Ihren PC. Er bringt drei eigene Modelle mit, Sirius 1, Sirius 2 und Sirius 3, die je nach Aufgabe automatisch gewählt werden, plus 940 MCP-Tools in 48 Familien, die pro Anfrage per Embeddings ausgewählt werden. Er arbeitet direkt auf Ihrer Maschine: Code, Dateien bearbeiten, Terminal, git, Datenbanken, Office-Dokumente, Bilder und PDFs. Eine native Windows-App mit Streaming-Antworten, Freigabe jeder Aktion, Skills, Subagenten und lokalem Speicher.",
+          "Sirius ist der KI-Agent von Lumni für Ihren PC. Er bringt drei eigene Modelle mit, Sirius A, Sirius B und Sirius X, die je nach Aufgabe automatisch gewählt werden, plus 940 MCP-Tools in 48 Familien, die pro Anfrage per Embeddings ausgewählt werden. Er arbeitet direkt auf Ihrer Maschine: Code, Dateien bearbeiten, Terminal, git, Datenbanken, Office-Dokumente, Bilder und PDFs. Eine native Windows-App mit Streaming-Antworten, Freigabe jeder Aktion, Skills, Subagenten und lokalem Speicher.",
         highlights: [
           "Native Windows-App",
-          "Modelle Sirius 1, 2 und 3",
+          "Modelle Sirius A, B und X",
           "940 MCP-Tools",
           "Auswahl per Embeddings",
           "Dateien, Terminal und git",

@@ -116,10 +116,10 @@ const zh: Dictionary = {
         name: "Sirius",
         headline: "运行在 Windows 上的 AI 代理。",
         description:
-          "Sirius 是 Lumni 面向电脑的 AI 代理。内置三款自有模型 Sirius 1、Sirius 2、Sirius 3，按任务自动选择；并有 48 个家族共 940 个 MCP 工具，每次请求通过嵌入进行筛选。直接在本机处理代码、文件编辑、终端、git、数据库、Office 文档、图像和 PDF。原生 Windows 应用，流式回复，每个操作都需批准，并具备 skills、子代理和本地记忆。",
+          "Sirius 是 Lumni 面向电脑的 AI 代理。内置三款自有模型 Sirius A、Sirius B、Sirius X，按任务自动选择；并有 48 个家族共 940 个 MCP 工具，每次请求通过嵌入进行筛选。直接在本机处理代码、文件编辑、终端、git、数据库、Office 文档、图像和 PDF。原生 Windows 应用，流式回复，每个操作都需批准，并具备 skills、子代理和本地记忆。",
         highlights: [
           "原生 Windows 应用",
-          "Sirius 1、2、3 模型",
+          "Sirius A、B、X 模型",
           "940 个 MCP 工具",
           "嵌入式筛选",
           "文件、终端与 git",

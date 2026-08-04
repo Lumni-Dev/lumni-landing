@@ -122,10 +122,10 @@ const nl: Dictionary = {
         name: "Sirius",
         headline: "Een AI-agent op jouw Windows.",
         description:
-          "Sirius is de AI-agent van Lumni voor jouw pc. Hij bevat drie eigen modellen, Sirius 1, Sirius 2 en Sirius 3, die automatisch per taak worden gekozen, plus 940 MCP-tools in 48 families die per verzoek via embeddings worden geselecteerd. Hij werkt direct op jouw machine: code, bestanden bewerken, terminal, git, databases, Office-documenten, afbeeldingen en PDF's. Een native Windows-app, met streaming-antwoorden, goedkeuring van elke actie, skills, subagents en lokaal geheugen.",
+          "Sirius is de AI-agent van Lumni voor jouw pc. Hij bevat drie eigen modellen, Sirius A, Sirius B en Sirius X, die automatisch per taak worden gekozen, plus 940 MCP-tools in 48 families die per verzoek via embeddings worden geselecteerd. Hij werkt direct op jouw machine: code, bestanden bewerken, terminal, git, databases, Office-documenten, afbeeldingen en PDF's. Een native Windows-app, met streaming-antwoorden, goedkeuring van elke actie, skills, subagents en lokaal geheugen.",
         highlights: [
           "Native Windows-app",
-          "Modellen Sirius 1, 2 en 3",
+          "Modellen Sirius A, B en X",
           "940 MCP-tools",
           "Selectie via embeddings",
           "Bestanden, terminal en git",

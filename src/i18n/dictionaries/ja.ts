@@ -122,10 +122,10 @@ const ja: Dictionary = {
         name: "Sirius",
         headline: "Windows上のAIエージェント。",
         description:
-          "SiriusはLumniのPC向けAIエージェントです。独自の3モデル（Sirius 1、Sirius 2、Sirius 3）をタスクに応じて自動選択し、48ファミリー940個のMCPツールをリクエストごとに埋め込みで選びます。自機で直接、コード、ファイル編集、ターミナル、git、データベース、Office文書、画像、PDFを扱います。ネイティブWindowsアプリで、応答はストリーミング、各操作は承認制、スキルやサブエージェント、ローカルメモリを備えます。",
+          "SiriusはLumniのPC向けAIエージェントです。独自の3モデル（Sirius A、Sirius B、Sirius X）をタスクに応じて自動選択し、48ファミリー940個のMCPツールをリクエストごとに埋め込みで選びます。自機で直接、コード、ファイル編集、ターミナル、git、データベース、Office文書、画像、PDFを扱います。ネイティブWindowsアプリで、応答はストリーミング、各操作は承認制、スキルやサブエージェント、ローカルメモリを備えます。",
         highlights: [
           "ネイティブWindowsアプリ",
-          "Sirius 1・2・3モデル",
+          "Sirius A・B・Xモデル",
           "940個のMCPツール",
           "埋め込みで選択",
           "ファイル・ターミナル・git",

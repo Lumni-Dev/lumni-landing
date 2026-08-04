@@ -123,10 +123,10 @@ const en: Dictionary = {
         name: "Sirius",
         headline: "An AI agent on your Windows PC.",
         description:
-          "Sirius is Lumni's AI agent for your PC. It ships three in-house models, Sirius 1, Sirius 2 and Sirius 3, picked automatically for each task, plus 940 MCP tools across 48 families selected by embeddings on every request. It works right on your machine: coding, editing files, the terminal, git, databases, Office documents, images and PDFs. A native Windows app, with streaming replies, per-action approval, skills, subagents and local memory.",
+          "Sirius is Lumni's AI agent for your PC. It ships three in-house models, Sirius A, Sirius B and Sirius X, picked automatically for each task, plus 940 MCP tools across 48 families selected by embeddings on every request. It works right on your machine: coding, editing files, the terminal, git, databases, Office documents, images and PDFs. A native Windows app, with streaming replies, per-action approval, skills, subagents and local memory.",
         highlights: [
           "Native Windows app",
-          "Sirius 1, 2 and 3 models",
+          "Sirius A, B and X models",
           "940 MCP tools",
           "Embedding tool selection",
           "Files, terminal and git",

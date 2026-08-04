@@ -122,10 +122,10 @@ const ko: Dictionary = {
         name: "Sirius",
         headline: "Windows 위의 AI 에이전트.",
         description:
-          "Sirius는 Lumni의 PC용 AI 에이전트입니다. 자체 모델 세 가지(Sirius 1, Sirius 2, Sirius 3)를 작업에 따라 자동으로 선택하고, 48개 계열 940개의 MCP 도구를 요청마다 임베딩으로 고릅니다. 내 기기에서 곧바로 코드, 파일 편집, 터미널, git, 데이터베이스, Office 문서, 이미지, PDF를 다룹니다. 네이티브 Windows 앱이며, 응답은 스트리밍, 각 작업은 승인제이고 스킬과 서브에이전트, 로컬 메모리를 갖춥니다.",
+          "Sirius는 Lumni의 PC용 AI 에이전트입니다. 자체 모델 세 가지(Sirius A, Sirius B, Sirius X)를 작업에 따라 자동으로 선택하고, 48개 계열 940개의 MCP 도구를 요청마다 임베딩으로 고릅니다. 내 기기에서 곧바로 코드, 파일 편집, 터미널, git, 데이터베이스, Office 문서, 이미지, PDF를 다룹니다. 네이티브 Windows 앱이며, 응답은 스트리밍, 각 작업은 승인제이고 스킬과 서브에이전트, 로컬 메모리를 갖춥니다.",
         highlights: [
           "네이티브 Windows 앱",
-          "Sirius 1, 2, 3 모델",
+          "Sirius A, B, X 모델",
           "940개 MCP 도구",
           "임베딩 선택",
           "파일, 터미널, git",

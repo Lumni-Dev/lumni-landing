@@ -122,10 +122,10 @@ const it: Dictionary = {
         name: "Sirius",
         headline: "Agente di IA sul tuo Windows.",
         description:
-          "Sirius è l'agente di IA di Lumni per il tuo PC. Include tre modelli proprietari, Sirius 1, Sirius 2 e Sirius 3, scelti automaticamente in base al compito, più 940 strumenti MCP in 48 famiglie selezionati tramite embedding a ogni richiesta. Lavora direttamente sulla tua macchina: codice, modifica di file, terminale, git, database, documenti Office, immagini e PDF. Un'app nativa di Windows, con risposte in streaming, approvazione di ogni azione, skill, subagenti e memoria locale.",
+          "Sirius è l'agente di IA di Lumni per il tuo PC. Include tre modelli proprietari, Sirius A, Sirius B e Sirius X, scelti automaticamente in base al compito, più 940 strumenti MCP in 48 famiglie selezionati tramite embedding a ogni richiesta. Lavora direttamente sulla tua macchina: codice, modifica di file, terminale, git, database, documenti Office, immagini e PDF. Un'app nativa di Windows, con risposte in streaming, approvazione di ogni azione, skill, subagenti e memoria locale.",
         highlights: [
           "App nativa di Windows",
-          "Modelli Sirius 1, 2 e 3",
+          "Modelli Sirius A, B e X",
           "940 strumenti MCP",
           "Selezione tramite embedding",
           "File, terminale e git",
