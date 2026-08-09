@@ -19,7 +19,7 @@ const zh: Dictionary = {
     strip: "系统 · 自动化 · 咨询 · 安全",
   },
   company: {
-    tagline: "值得企业信赖的提示词工程。",
+    tagline: "值得企业信赖的软件工程。",
     description:
       "Lumni 开发系统、自动化流程，并让工程师融入您的团队。从首次诊断到代码在生产环境中运行。",
   },

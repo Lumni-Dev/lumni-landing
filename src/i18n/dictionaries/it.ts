@@ -19,7 +19,7 @@ const it: Dictionary = {
     strip: "SISTEMI · AUTOMAZIONE · CONSULENZA · SICUREZZA",
   },
   company: {
-    tagline: "Prompt engineering di cui la tua azienda può fidarsi.",
+    tagline: "Ingegneria del software di cui la tua azienda può fidarsi.",
     description:
       "Lumni sviluppa sistemi, automatizza processi e integra ingegneri nel tuo team. Dalla prima diagnosi al codice in produzione.",
   },

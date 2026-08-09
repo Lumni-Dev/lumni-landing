@@ -19,7 +19,7 @@ const nl: Dictionary = {
     strip: "SYSTEMEN · AUTOMATISERING · ADVIES · SECURITY",
   },
   company: {
-    tagline: "Prompt engineering waar je bedrijf op kan vertrouwen.",
+    tagline: "Software engineering waar je bedrijf op kan vertrouwen.",
     description:
       "Lumni bouwt systemen, automatiseert processen en voegt engineers toe aan je team. Van de eerste diagnose tot code in productie.",
   },

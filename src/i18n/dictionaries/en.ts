@@ -20,7 +20,7 @@ const en: Dictionary = {
     strip: "SYSTEMS · AUTOMATION · CONSULTING · SECURITY",
   },
   company: {
-    tagline: "Prompt engineering your company can trust.",
+    tagline: "Software engineering your company can trust.",
     description:
       "Lumni builds systems, automates processes and embeds engineers into your team. From the first diagnosis to code running in production.",
   },

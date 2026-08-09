@@ -19,7 +19,7 @@ const fr: Dictionary = {
     strip: "SYSTÈMES · AUTOMATISATION · CONSEIL · SÉCURITÉ",
   },
   company: {
-    tagline: "L'ingénierie de prompt à laquelle votre entreprise peut se fier.",
+    tagline: "L'ingénierie logicielle à laquelle votre entreprise peut se fier.",
     description:
       "Lumni développe des systèmes, automatise les processus et intègre des ingénieurs à votre équipe. Du premier diagnostic au code en production.",
   },

@@ -19,7 +19,7 @@ const es: Dictionary = {
     strip: "SISTEMAS · AUTOMATIZACIÓN · CONSULTORÍA · SEGURIDAD",
   },
   company: {
-    tagline: "Ingeniería de prompts en la que tu empresa puede confiar.",
+    tagline: "Ingeniería de software en la que tu empresa puede confiar.",
     description:
       "Lumni desarrolla sistemas, automatiza procesos y acopla ingenieros a tu equipo. Del primer diagnóstico al código funcionando en producción.",
   },

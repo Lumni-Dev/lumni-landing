@@ -19,7 +19,7 @@ const de: Dictionary = {
     strip: "SYSTEME · AUTOMATISIERUNG · BERATUNG · SICHERHEIT",
   },
   company: {
-    tagline: "Prompt-Engineering, dem Ihr Unternehmen vertrauen kann.",
+    tagline: "Software-Engineering, dem Ihr Unternehmen vertrauen kann.",
     description:
       "Lumni entwickelt Systeme, automatisiert Prozesse und integriert Ingenieure in Ihr Team. Von der ersten Diagnose bis zum Code im Produktivbetrieb.",
   },
