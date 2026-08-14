@@ -136,6 +136,24 @@ const de: Dictionary = {
         actionLabel: "Sirius entdecken",
         status: "In Produktion",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "Mehrere Browser in einem Fenster.",
+        description:
+          "Nipuz ist der Multi-Konto-Browser von Lumni. Er führt mehrere isolierte Konten nebeneinander in einem einzigen Fenster aus, jeder Browser mit eigenem Login, eigenen Cookies und eigenem Cache und in einem eigenen Prozess, sodass die anderen weiterlaufen, wenn einer abstürzt. Organisiere alles in Workspaces, beobachte CPU und RAM jedes Panels in Echtzeit und steuere Stummschaltung, Zoom und Inkognito pro Browser. Integrierter Werbeblocker, Tastenkürzel und Google-Anmeldung. Native Windows-App.",
+        highlights: [
+          "Native Windows-App",
+          "Vollständig isolierte Sitzungen",
+          "Workspaces",
+          "Panel-Raster",
+          "CPU und RAM pro Panel",
+          "Werbeblocker",
+          "Inkognito-Modus",
+          "Google-Anmeldung",
+        ],
+        actionLabel: "Nipuz entdecken",
+        status: "In Produktion",
+      },
       disys: {
         name: "Disys",
         headline: "ERP für das Personalwesen.",

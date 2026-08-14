@@ -5,7 +5,7 @@ export type ServiceId =
   | "ciberseguranca"
   | "suporte";
 
-export type SystemId = "sirius" | "disys";
+export type SystemId = "sirius" | "nipuz" | "disys";
 
 export interface ServiceContent {
   title: string;

@@ -136,6 +136,24 @@ const es: Dictionary = {
         actionLabel: "Conocer Sirius",
         status: "En producción",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "Varios navegadores en una sola ventana.",
+        description:
+          "Nipuz es el navegador multicuenta de Lumni. Ejecuta varias cuentas aisladas una al lado de la otra en una sola ventana, cada navegador con su propio inicio de sesión, cookies y caché y su propio proceso, así que si uno falla los demás siguen funcionando. Organiza todo en espacios de trabajo, observa el CPU y la RAM de cada panel en tiempo real y controla silencio, zoom y modo incógnito por navegador. Bloqueador de anuncios integrado, atajos de teclado e inicio de sesión con Google. App nativa de Windows.",
+        highlights: [
+          "App nativa de Windows",
+          "Sesiones 100% aisladas",
+          "Espacios de trabajo",
+          "Cuadrícula de paneles",
+          "CPU y RAM por panel",
+          "Bloqueador de anuncios",
+          "Modo incógnito",
+          "Inicio con Google",
+        ],
+        actionLabel: "Conocer Nipuz",
+        status: "En producción",
+      },
       disys: {
         name: "Disys",
         headline: "ERP de recursos humanos.",

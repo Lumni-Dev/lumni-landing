@@ -136,6 +136,24 @@ const fr: Dictionary = {
         actionLabel: "Découvrir Sirius",
         status: "En production",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "Plusieurs navigateurs dans une seule fenêtre.",
+        description:
+          "Nipuz est le navigateur multicompte de Lumni. Il exécute plusieurs comptes isolés côte à côte dans une seule fenêtre, chaque navigateur avec ses propres identifiants, cookies et cache et son propre processus, donc si l'un plante les autres continuent. Organisez tout en espaces de travail, suivez le CPU et la RAM de chaque panneau en temps réel et contrôlez le muet, le zoom et le mode privé par navigateur. Bloqueur de publicités intégré, raccourcis clavier et connexion Google. Application Windows native.",
+        highlights: [
+          "Application Windows native",
+          "Sessions totalement isolées",
+          "Espaces de travail",
+          "Grille de panneaux",
+          "CPU et RAM par panneau",
+          "Bloqueur de publicités",
+          "Mode privé",
+          "Connexion Google",
+        ],
+        actionLabel: "Découvrir Nipuz",
+        status: "En production",
+      },
       disys: {
         name: "Disys",
         headline: "L'ERP des ressources humaines.",

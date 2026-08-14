@@ -137,6 +137,24 @@ const en: Dictionary = {
         actionLabel: "Meet Sirius",
         status: "In production",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "Several browsers in one window.",
+        description:
+          "Nipuz is Lumni's multi-account browser. It runs several isolated accounts side by side in a single window, each browser with its own login, cookies and cache and its own process, so if one crashes the others keep running. Organize everything into workspaces, watch each panel's CPU and RAM in real time, and control mute, zoom and incognito per browser. Built-in ad blocker, keyboard shortcuts and Google sign-in. Native Windows app.",
+        highlights: [
+          "Native Windows app",
+          "Fully isolated sessions",
+          "Workspaces with layout",
+          "Panel grid",
+          "CPU and RAM per panel",
+          "Built-in ad blocker",
+          "Incognito mode",
+          "Google sign-in",
+        ],
+        actionLabel: "Explore Nipuz",
+        status: "In production",
+      },
       disys: {
         name: "Disys",
         headline: "Human resources ERP.",

@@ -136,6 +136,24 @@ const it: Dictionary = {
         actionLabel: "Scopri Sirius",
         status: "In produzione",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "Più browser in una sola finestra.",
+        description:
+          "Nipuz è il browser multi-account di Lumni. Esegue più account isolati affiancati in una sola finestra, ogni browser con il proprio accesso, cookie e cache e con un proprio processo, così se uno si blocca gli altri continuano. Organizza tutto in spazi di lavoro, controlla CPU e RAM di ogni pannello in tempo reale e gestisci muto, zoom e modalità in incognito per browser. Blocco pubblicità integrato, scorciatoie da tastiera e accesso con Google. App nativa per Windows.",
+        highlights: [
+          "App nativa per Windows",
+          "Sessioni totalmente isolate",
+          "Spazi di lavoro",
+          "Griglia di pannelli",
+          "CPU e RAM per pannello",
+          "Blocco pubblicità",
+          "Modalità in incognito",
+          "Accesso con Google",
+        ],
+        actionLabel: "Scopri Nipuz",
+        status: "In produzione",
+      },
       disys: {
         name: "Disys",
         headline: "ERP per le risorse umane.",

@@ -130,6 +130,24 @@ const zh: Dictionary = {
         actionLabel: "了解 Sirius",
         status: "已上线",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "在一个窗口里运行多个浏览器。",
+        description:
+          "Nipuz 是 Lumni 的多账户浏览器。它在一个窗口中并排运行多个相互隔离的账户，每个浏览器都有独立的登录、Cookie 和缓存，并运行在各自的进程中，因此某个崩溃时其他仍可继续使用。用工作区整理一切，实时查看每个面板的 CPU 和内存，并按浏览器分别控制静音、缩放和无痕模式。内置广告拦截、键盘快捷键和 Google 登录。原生 Windows 应用。",
+        highlights: [
+          "原生 Windows 应用",
+          "完全隔离的会话",
+          "工作区",
+          "面板网格",
+          "每个面板的 CPU 和内存",
+          "广告拦截",
+          "无痕模式",
+          "Google 登录",
+        ],
+        actionLabel: "了解 Nipuz",
+        status: "已上线",
+      },
       disys: {
         name: "Disys",
         headline: "人力资源 ERP。",

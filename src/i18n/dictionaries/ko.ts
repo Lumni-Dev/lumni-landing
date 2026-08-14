@@ -136,6 +136,24 @@ const ko: Dictionary = {
         actionLabel: "Sirius 알아보기",
         status: "운영 중",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "여러 브라우저를 한 창에서.",
+        description:
+          "Nipuz는 Lumni의 멀티 계정 브라우저입니다. 여러 개의 격리된 계정을 하나의 창에서 나란히 실행하며, 각 브라우저는 로그인, 쿠키, 캐시를 독립적으로 가지고 자체 프로세스로 동작하므로 하나가 멈춰도 나머지는 계속 작동합니다. 모든 것을 워크스페이스로 정리하고, 각 패널의 CPU와 RAM을 실시간으로 확인하며, 음소거, 확대/축소, 시크릿 모드를 브라우저별로 제어하세요. 광고 차단기 내장, 키보드 단축키, Google 로그인 지원. 네이티브 Windows 앱입니다.",
+        highlights: [
+          "네이티브 Windows 앱",
+          "완전 격리 세션",
+          "워크스페이스",
+          "패널 그리드",
+          "패널별 CPU와 RAM",
+          "광고 차단기",
+          "시크릿 모드",
+          "Google 로그인",
+        ],
+        actionLabel: "Nipuz 알아보기",
+        status: "운영 중",
+      },
       disys: {
         name: "Disys",
         headline: "인적 자원 ERP.",

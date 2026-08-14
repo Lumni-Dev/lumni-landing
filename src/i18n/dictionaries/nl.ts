@@ -136,6 +136,24 @@ const nl: Dictionary = {
         actionLabel: "Ontmoet Sirius",
         status: "In productie",
       },
+      nipuz: {
+        name: "Nipuz",
+        headline: "Meerdere browsers in één venster.",
+        description:
+          "Nipuz is de multi-accountbrowser van Lumni. Hij draait meerdere geïsoleerde accounts naast elkaar in één venster, elke browser met een eigen login, cookies en cache en een eigen proces, dus als er één vastloopt blijven de andere werken. Organiseer alles in workspaces, bekijk de CPU en RAM van elk paneel in realtime en regel dempen, zoom en incognito per browser. Ingebouwde advertentieblokkering, sneltoetsen en inloggen met Google. Native Windows-app.",
+        highlights: [
+          "Native Windows-app",
+          "Volledig geïsoleerde sessies",
+          "Workspaces",
+          "Panelenraster",
+          "CPU en RAM per paneel",
+          "Advertentieblokkering",
+          "Incognitomodus",
+          "Inloggen met Google",
+        ],
+        actionLabel: "Ontdek Nipuz",
+        status: "In productie",
+      },
       disys: {
         name: "Disys",
         headline: "ERP voor human resources.",
