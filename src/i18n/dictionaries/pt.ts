@@ -199,7 +199,7 @@ const pt: Dictionary = {
   },
   legal: {
     updatedAtLabel: "Última atualização:",
-    updatedAt: "25 de julho de 2026",
+    updatedAt: "16 de agosto de 2026",
     backToSite: "Voltar ao site",
     home: "Início",
     terms: {
@@ -421,7 +421,26 @@ const pt: Dictionary = {
           ],
         },
         {
-          heading: "11. Crianças e adolescentes",
+          heading: "11. Extensão Sirius para Chrome",
+          body: [
+            {
+              p: "A Sirius Extension conecta o aplicativo Sirius instalado no seu computador ao navegador, para executar tarefas na web sob o seu comando (navegar, ler, clicar e digitar), somente enquanto você mantém o modo navegador ligado no aplicativo.",
+            },
+            {
+              list: [
+                "**O que a extensão acessa.** Durante uma tarefa, a extensão lê o conteúdo da aba controlada (endereço, título, textos e elementos da página) e realiza nela as ações pedidas;",
+                "**Para onde os dados vão.** As informações lidas são entregues exclusivamente ao aplicativo Sirius em execução no seu próprio computador (conexão local). A extensão não envia dados a servidores externos, não usa serviços de análise e não exibe anúncios;",
+                "**O que fica guardado.** A extensão armazena localmente apenas dados técnicos de reconexão (como a última porta local usada). Ela não retém histórico de navegação nem conteúdo de páginas;",
+                "**Controle.** Desligar o modo navegador no aplicativo, ou remover a extensão, interrompe imediatamente qualquer acesso.",
+              ],
+            },
+            {
+              p: "O conteúdo processado pelo aplicativo Sirius a partir dessas tarefas segue as demais seções desta Política.",
+            },
+          ],
+        },
+        {
+          heading: "12. Crianças e adolescentes",
           body: [
             {
               p: "O serviço não é direcionado a menores de 18 anos e não coletamos intencionalmente dados de menores sem o consentimento dos responsáveis. Se identificarmos esse tipo de coleta, eliminaremos os dados.",
@@ -429,7 +448,7 @@ const pt: Dictionary = {
           ],
         },
         {
-          heading: "12. Alterações desta Política",
+          heading: "13. Alterações desta Política",
           body: [
             {
               p: "Podemos atualizar esta Política periodicamente. Quando isso ocorrer, revisaremos a data de “última atualização” no topo desta página e, quando cabível, avisaremos por meios adequados.",
@@ -437,7 +456,7 @@ const pt: Dictionary = {
           ],
         },
         {
-          heading: "13. Contato",
+          heading: "14. Contato",
           body: [
             {
               p: "Dúvidas, pedidos ou reclamações sobre privacidade podem ser enviados para [{email}](mailto:{email}). Você também pode consultar os nossos [Termos de Uso](/terms).",

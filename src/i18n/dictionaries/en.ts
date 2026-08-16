@@ -198,7 +198,7 @@ const en: Dictionary = {
   },
   legal: {
     updatedAtLabel: "Last updated:",
-    updatedAt: "July 25, 2026",
+    updatedAt: "August 16, 2026",
     backToSite: "Back to the site",
     home: "Home",
     courtesyNote:
@@ -422,7 +422,26 @@ const en: Dictionary = {
           ],
         },
         {
-          heading: "11. Children and teenagers",
+          heading: "11. Sirius Extension for Chrome",
+          body: [
+            {
+              p: "The Sirius Extension connects the Sirius desktop app installed on your computer to your browser, so it can perform web tasks under your command (navigate, read, click and type), only while you keep the browser mode turned on in the app.",
+            },
+            {
+              list: [
+                "**What the extension accesses.** During a task, the extension reads the content of the controlled tab (address, title, page text and elements) and performs the requested actions on it;",
+                "**Where the data goes.** What it reads is delivered exclusively to the Sirius app running on your own computer (a local connection). The extension does not send data to external servers, does not use analytics services and does not show ads;",
+                "**What is stored.** The extension keeps locally only technical reconnection data (such as the last local port used). It retains no browsing history and no page content;",
+                "**Control.** Turning the browser mode off in the app, or removing the extension, immediately stops any access.",
+              ],
+            },
+            {
+              p: "Content the Sirius app processes from those tasks follows the other sections of this Policy.",
+            },
+          ],
+        },
+        {
+          heading: "12. Children and teenagers",
           body: [
             {
               p: "The service is not directed at people under 18 and we do not knowingly collect data from minors without their guardians' consent. If we identify such collection, we will delete the data.",
@@ -430,7 +449,7 @@ const en: Dictionary = {
           ],
         },
         {
-          heading: "12. Changes to this Policy",
+          heading: "13. Changes to this Policy",
           body: [
             {
               p: "We may update this Policy from time to time. When that happens, we will revise the “last updated” date at the top of this page and, where appropriate, notify you through suitable means.",
@@ -438,7 +457,7 @@ const en: Dictionary = {
           ],
         },
         {
-          heading: "13. Contact",
+          heading: "14. Contact",
           body: [
             {
               p: "Questions, requests or complaints about privacy can be sent to [{email}](mailto:{email}). You can also read our [Terms of Use](/terms).",
