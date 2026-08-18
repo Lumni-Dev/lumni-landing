@@ -38,13 +38,13 @@ export class CompanyRepository {
         value: "contact@lumni.dev.br",
         href: "mailto:contact@lumni.dev.br",
       }),
-      // TODO: numero de WhatsApp escondido por enquanto; sera usado no futuro.
-      // new ContactChannel({
-      //   kind: "whatsapp",
-      //   label: dict.contact.channels.whatsapp,
-      //   value: "+55 (11) 90000-0000",
-      //   href: "https://wa.me/5511900000000",
-      // }),
+      // WhatsApp do Sirius (chatbot que atende no numero abaixo).
+      new ContactChannel({
+        kind: "whatsapp",
+        label: dict.contact.channels.whatsapp,
+        value: "+55 (16) 99244-7672",
+        href: "https://wa.me/5516992447672",
+      }),
     ];
   }
 }
